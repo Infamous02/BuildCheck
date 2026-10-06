@@ -1,0 +1,58 @@
+{
+  "_note": "Sample dataset for the Module 2 prototype. Specs should be verified against manufacturer pages; QVL entries are illustrative until checked against each board's official memory QVL PDF.",
+  "chipsets": {
+    "Z890": ["Core Ultra 200S"],
+    "B760": ["Core 12th Gen", "Core 13th Gen", "Core 14th Gen"],
+    "B650": ["Ryzen 7000", "Ryzen 8000", "Ryzen 9000"]
+  },
+  "cpus": {
+    "ultra7-265k": {"name": "Intel Core Ultra 7 265K", "socket": "LGA1851", "family": "Core Ultra 200S", "memory_types": ["DDR5"], "max_power_w": 250},
+    "ultra5-245k": {"name": "Intel Core Ultra 5 245K", "socket": "LGA1851", "family": "Core Ultra 200S", "memory_types": ["DDR5"], "max_power_w": 159},
+    "i7-14700k":   {"name": "Intel Core i7-14700K", "socket": "LGA1700", "family": "Core 14th Gen", "memory_types": ["DDR4", "DDR5"], "max_power_w": 253},
+    "r7-9800x3d":  {"name": "AMD Ryzen 7 9800X3D", "socket": "AM5", "family": "Ryzen 9000", "memory_types": ["DDR5"], "max_power_w": 162},
+    "r5-7600x":    {"name": "AMD Ryzen 5 7600X", "socket": "AM5", "family": "Ryzen 7000", "memory_types": ["DDR5"], "max_power_w": 142}
+  },
+  "motherboards": {
+    "gb-z890-eagle": {
+      "name": "Gigabyte Z890 EAGLE WIFI7", "socket": "LGA1851", "chipset": "Z890",
+      "memory_type": "DDR5", "ram_slots": 4, "max_ram_speed_mts": 8800,
+      "bios_notes": {},
+      "qvl": ["CMK32GX5M2B6000C30", "F5-6400J3239G16GX2-TZ5RK"]
+    },
+    "msi-b760m-ddr4": {
+      "name": "MSI PRO B760M-A DDR4 II", "socket": "LGA1700", "chipset": "B760",
+      "memory_type": "DDR4", "ram_slots": 4, "max_ram_speed_mts": 4800,
+      "bios_notes": {},
+      "qvl": ["KF432C16BBK2/32"]
+    },
+    "asus-tuf-b650": {
+      "name": "ASUS TUF GAMING B650-PLUS WIFI", "socket": "AM5", "chipset": "B650",
+      "memory_type": "DDR5", "ram_slots": 4, "max_ram_speed_mts": 6400,
+      "bios_notes": {"Ryzen 9000": "Update BIOS to an AGESA 1.2.0.x or newer release before installing the CPU (boards made before mid-2024 may ship with older firmware)."},
+      "qvl": ["CMK32GX5M2B6000C30"]
+    },
+    "msi-b650-tomahawk": {
+      "name": "MSI MAG B650 TOMAHAWK WIFI", "socket": "AM5", "chipset": "B650",
+      "memory_type": "DDR5", "ram_slots": 4, "max_ram_speed_mts": 6600,
+      "bios_notes": {"Ryzen 9000": "Update BIOS to an AGESA 1.2.0.x or newer release (use Flash BIOS button if the CPU won't POST)."},
+      "qvl": ["CMK32GX5M2B6000C30", "F5-6400J3239G16GX2-TZ5RK"]
+    }
+  },
+  "ram": {
+    "corsair-6000": {"name": "Corsair Vengeance 32GB (2x16GB) DDR5-6000 CL30", "sku": "CMK32GX5M2B6000C30", "type": "DDR5", "speed_mts": 6000, "modules": 2},
+    "gskill-6400":  {"name": "G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5-6400 CL32", "sku": "F5-6400J3239G16GX2-TZ5RK", "type": "DDR5", "speed_mts": 6400, "modules": 2},
+    "gskill-8000":  {"name": "G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5-8000 CL38", "sku": "F5-8000J3848H16GX2-TZ5RK", "type": "DDR5", "speed_mts": 8000, "modules": 2},
+    "kingston-ddr4":{"name": "Kingston FURY Beast 32GB (2x16GB) DDR4-3200 CL16", "sku": "KF432C16BBK2/32", "type": "DDR4", "speed_mts": 3200, "modules": 2}
+  },
+  "gpus": {
+    "rtx5070": {"name": "NVIDIA GeForce RTX 5070", "power_w": 250, "recommended_psu_w": 650},
+    "rtx5080": {"name": "NVIDIA GeForce RTX 5080", "power_w": 360, "recommended_psu_w": 850},
+    "rtx5090": {"name": "NVIDIA GeForce RTX 5090", "power_w": 575, "recommended_psu_w": 1000}
+  },
+  "psus": {
+    "cx550":  {"name": "Corsair CX550 (550W)", "wattage": 550},
+    "rm750e": {"name": "Corsair RM750e (750W)", "wattage": 750},
+    "rm850e": {"name": "Corsair RM850e (850W)", "wattage": 850},
+    "rm1000e":{"name": "Corsair RM1000e (1000W)", "wattage": 1000}
+  }
+}
