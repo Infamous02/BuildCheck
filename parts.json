@@ -1,5 +1,4 @@
 {
-  "_note": "Sample dataset for the Module 2 prototype. Specs should be verified against manufacturer pages; QVL entries are illustrative until checked against each board's official memory QVL PDF.",
   "chipsets": {
     "Z890": ["Core Ultra 200S"],
     "B760": ["Core 12th Gen", "Core 13th Gen", "Core 14th Gen"],
