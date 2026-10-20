@@ -1,4 +1,4 @@
-"""Automated tests for the BuildCheck rules engine. Run with: pytest -v"""
+"""Automated tests for the BuildCheck rules engine. Run from the repo root with: py -m pytest -v"""
 import pytest
 
 from engine.buildcheck import FAIL, PASS, WARN, check_build, load_parts, make_build

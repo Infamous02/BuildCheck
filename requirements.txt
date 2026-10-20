@@ -1,0 +1,3 @@
+pdfplumber
+pydantic>=2
+pytest
