@@ -16,6 +16,7 @@ import argparse
 import hashlib
 import json
 import re
+import sys
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
@@ -74,10 +75,19 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+# Bullet glyphs from symbol fonts that pdfplumber maps to control codes
+# (seen in Gigabyte manuals). Normalized so extracted evidence can match.
+_GLYPH_FIXES = str.maketrans({"\x1b": "•", "\x84": "•", "\x8a": "•"})
+
+
+def _clean_text(text: str) -> str:
+    return text.translate(_GLYPH_FIXES)
+
+
 def _clean_cell(cell) -> str:
     if cell is None:
         return ""
-    return re.sub(r"\s+", " ", str(cell)).strip()
+    return re.sub(r"\s+", " ", _clean_text(str(cell))).strip()
 
 
 def parse_pdf(path: str | Path) -> ParsedDocument:
@@ -87,7 +97,7 @@ def parse_pdf(path: str | Path) -> ParsedDocument:
 
     with pdfplumber.open(path) as pdf:
         for i, page in enumerate(pdf.pages, start=1):
-            text = page.extract_text() or ""
+            text = _clean_text(page.extract_text() or "")
             tables = []
             for table in page.extract_tables():
                 rows = [[_clean_cell(c) for c in row] for row in table]
@@ -148,6 +158,9 @@ def main() -> None:
     ap.add_argument("--out", type=Path, help="Write parsed JSON here (default: parsed/<name>.json)")
     ap.add_argument("--find", nargs="*", help="Override keywords for page ranking")
     args = ap.parse_args()
+
+    # Windows consoles default to cp1252; don't crash on characters it can't show.
+    sys.stdout.reconfigure(errors="replace")
 
     doc = parse_pdf(args.pdf)
     out = args.out or Path("parsed") / f"{args.pdf.stem}.json"

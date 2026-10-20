@@ -6,8 +6,8 @@ pytest.importorskip("pdfplumber")
 
 from pydantic import ValidationError
 
-from ingest.parse import (ParsedDocument, ParsedPage, evidence_in_page, find_relevant_pages,
-                          parse_pdf, score_page, sha256_file)
+from ingest.parse import (ParsedDocument, ParsedPage, _clean_cell, _clean_text, evidence_in_page,
+                          find_relevant_pages, parse_pdf, score_page, sha256_file)
 from ingest.schemas import (CPURecord, ExtractedRecord, MotherboardRecord, QVLEntry,
                             normalize_memory_type, normalize_socket, parse_speed_mts)
 
@@ -179,6 +179,11 @@ def test_parsed_document_json_round_trip(doc, tmp_path):
     out = tmp_path / "nested" / "doc.json"
     doc.to_json(out)
     assert ParsedDocument.from_json(out) == doc
+
+
+def test_bullet_glyphs_are_normalized():
+    assert _clean_text("\x8a Support for DDR5\n\x1b Channel A\n\x84 Note") == "• Support for DDR5\n• Channel A\n• Note"
+    assert _clean_cell(" \x8a  4 x DDR5\nsockets ") == "• 4 x DDR5 sockets"
 
 
 def test_parse_pdf_extracts_pages_and_hash(tmp_path):
