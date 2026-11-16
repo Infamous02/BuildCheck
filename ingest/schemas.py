@@ -88,6 +88,20 @@ def normalize_memory_type(raw: str) -> str:
     return f"DDR{m.group(1)}"
 
 
+_MANUFACTURER_NAMES = {
+    "gigabyte": "Gigabyte", "asus": "ASUS", "msi": "MSI", "asrock": "ASRock",
+    "biostar": "Biostar", "intel": "Intel", "amd": "AMD", "nvidia": "NVIDIA",
+    "corsair": "Corsair", "g.skill": "G.Skill", "gskill": "G.Skill", "kingston": "Kingston",
+}
+
+
+def normalize_manufacturer(raw: str) -> str:
+    """'GIGABYTE', 'gigabyte', 'Gigabyte Technology' -> 'Gigabyte'. Unknown names pass through."""
+    cleaned = raw.strip()
+    first = cleaned.split()[0].lower() if cleaned else ""
+    return _MANUFACTURER_NAMES.get(cleaned.lower(), _MANUFACTURER_NAMES.get(first, cleaned))
+
+
 def parse_speed_mts(raw: str | int) -> int:
     """'DDR5-6400', '6400 MT/s', '6400MHz', 6400 -> 6400."""
     if isinstance(raw, int):
@@ -108,6 +122,13 @@ class _PartBase(BaseModel):
 
     manufacturer: Sourced[str]
     model: Sourced[str]
+
+    @field_validator("manufacturer")
+    @classmethod
+    def _norm_manufacturer(cls, v: Sourced[str]) -> Sourced[str]:
+        if v.value is not None:
+            v.value = normalize_manufacturer(v.value)
+        return v
 
 
 class MotherboardRecord(_PartBase):
