@@ -1,0 +1,88 @@
+{
+  "record": {
+    "record_id": "992f0d3d-6c5f-4dba-856b-dbd11908adc5",
+    "doc_id": "635139609d60d849bcb49213cd95877b73931f298cd67124db3bdb2fa6b260ad",
+    "source_file": "gig_z890.pdf",
+    "method": "deterministic",
+    "status": "pending",
+    "extracted_at": "2026-11-16T21:43:40.590224Z",
+    "data": {
+      "manufacturer": {
+        "value": "Gigabyte",
+        "page": 2,
+        "evidence": "GIGABYTE",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "Z890 EAGLE WIFI7 PLUS",
+        "page": 1,
+        "evidence": "Z890 EAGLE WIFI7 PLUS",
+        "confidence": 0.9
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": "LGA 1851",
+        "page": 7,
+        "evidence": "LGA1851 socket",
+        "confidence": 1.0
+      },
+      "chipset": {
+        "value": "Z890",
+        "page": 7,
+        "evidence": "Intel\u00ae Z890 Express Chipset",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": "ATX",
+        "page": 9,
+        "evidence": "ATX Form Factor",
+        "confidence": 1.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 7,
+        "evidence": "DDR5 7200/6400/5600 MT/s",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 7,
+        "evidence": "4 x DDR5 DIMM sockets",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 256,
+        "page": 7,
+        "evidence": "DIMM sockets supporting up to 256 GB",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": 7200,
+        "page": 7,
+        "evidence": "DDR5 7200/6400/5600 MT/s",
+        "confidence": 1.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "deterministic",
+    "socket": "deterministic",
+    "chipset": "deterministic",
+    "form_factor": "deterministic",
+    "memory_type": "deterministic",
+    "memory_slots": "deterministic",
+    "max_memory_gb": "deterministic",
+    "max_memory_speed_mts": "deterministic"
+  },
+  "problems": [],
+  "pages_used": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    13
+  ],
+  "backend": null
+}
