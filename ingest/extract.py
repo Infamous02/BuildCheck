@@ -104,12 +104,14 @@ class ExtractionResult:
 _MANUFACTURERS = {"gigabyte": "Gigabyte", "asus": "ASUS", "msi": "MSI", "asrock": "ASRock", "biostar": "Biostar"}
 
 _PATTERNS: dict[str, re.Pattern] = {
-    "socket": re.compile(r"((?:FC)?LGA\s?-?\d{4}|AM[45])\s+socket", re.I),
+    # "LGA1851 socket" (Gigabyte) or "Processor socket AM5" (MSI)
+    "socket": re.compile(r"((?:FC)?LGA\s?-?\d{4}|AM[45])\s+socket|socket\s+((?:FC)?LGA\s?-?\d{4}|AM[45])\b", re.I),
     "chipset": re.compile(r"(?:Intel®?|AMD)\s+([ABHXZ]\d{3}E?)\s+(?:Express\s+)?Chipset", re.I),
     "form_factor": re.compile(r"(E-ATX|Micro[- ]ATX|Mini[- ]ITX|ATX)\s+Form\s+Factor", re.I),
     "memory_speed": re.compile(r"(DDR[45])\s+((?:\d{4,5}\s*/\s*)*\d{4,5})\s*MT/s", re.I),
-    "memory_slots": re.compile(r"(\d)\s*x\s*DDR[45]\s+DIMM\s+sockets", re.I),
-    "max_memory_gb": re.compile(r"DIMM\s+sockets\s+supporting\s+up\s+to\s+(\d{2,4})\s*GB", re.I),
+    # "4 x DDR5 DIMM sockets" (Gigabyte) or "4x DDR5 memory slots" (MSI)
+    "memory_slots": re.compile(r"(\d)\s*x\s*(DDR[45])\s+(?:DIMM|memory)\s+(?:sockets|slots)", re.I),
+    "max_memory_gb": re.compile(r"(?:sockets|slots)\**,?\s+supporting\s+up\s+to\s+(\d{2,4})\s*GB", re.I),
 }
 
 _FORM_FACTORS = {"e-atx": "E-ATX", "atx": "ATX", "micro-atx": "Micro-ATX", "micro atx": "Micro-ATX",
@@ -123,11 +125,11 @@ def _det(value, page, match_text) -> FieldValue:
 def extract_deterministic(doc: ParsedDocument, pages: list[int]) -> dict[str, FieldValue]:
     found: dict[str, FieldValue] = {}
 
-    for page in sorted(pages):
+    for page in pages:                    # spec pages come first (see choose_pages)
         text = doc.page_text(page)
 
         if "socket" not in found and (m := _PATTERNS["socket"].search(text)):
-            found["socket"] = _det(m.group(1).replace(" ", ""), page, m.group(0))
+            found["socket"] = _det((m.group(1) or m.group(2)).replace(" ", ""), page, m.group(0))
         if "chipset" not in found and (m := _PATTERNS["chipset"].search(text)):
             found["chipset"] = _det(m.group(1).upper(), page, m.group(0))
         if "form_factor" not in found and (m := _PATTERNS["form_factor"].search(text)):
@@ -138,6 +140,8 @@ def extract_deterministic(doc: ParsedDocument, pages: list[int]) -> dict[str, Fi
             found["max_memory_speed_mts"] = _det(max(speeds), page, m.group(0))
         if "memory_slots" not in found and (m := _PATTERNS["memory_slots"].search(text)):
             found["memory_slots"] = _det(int(m.group(1)), page, m.group(0))
+            if "memory_type" not in found:
+                found["memory_type"] = _det(m.group(2).upper(), page, m.group(0))
         if "max_memory_gb" not in found and (m := _PATTERNS["max_memory_gb"].search(text)):
             found["max_memory_gb"] = _det(int(m.group(1)), page, m.group(0))
 
@@ -151,7 +155,7 @@ def extract_deterministic(doc: ParsedDocument, pages: list[int]) -> dict[str, Fi
     # Model: first line of the cover page. Confidence < 1 because one manual often
     # covers several variants (this Z890 manual covers WIFI7 PLUS and PLUS).
     cover = doc.pages[0].text if doc.pages else ""
-    if "manual" in cover.lower():
+    if any(w in cover.lower() for w in ("manual", "user guide")):
         first = next((ln.strip() for ln in cover.splitlines() if ln.strip()), None)
         if first:
             found["model"] = FieldValue(first, 1, first, 0.9, "deterministic")
@@ -273,11 +277,25 @@ def build_record(doc: ParsedDocument, fields: dict[str, Optional[FieldValue]],
 # Orchestration
 # ---------------------------------------------------------------------------
 
+SPEC_SPAN = 4   # spec tables often run across several pages ("Continued on next column")
+
+
+def find_spec_pages(doc: ParsedDocument) -> list[int]:
+    """The 'Specifications' section: first page headed with it, plus the next few pages."""
+    for p in doc.pages:
+        head = " ".join(p.text.strip().splitlines()[:2]).lower()
+        if "specifications" in head:
+            return list(range(p.page, min(p.page + SPEC_SPAN, doc.page_count + 1)))
+    return []
+
+
 def choose_pages(doc: ParsedDocument, override: list[int] | None = None) -> list[int]:
+    """Spec section first, then other keyword-ranked pages. Order matters: the LLM
+    prompt is cut at MAX_PROMPT_CHARS, so the most useful pages go in first."""
     if override:
-        return sorted(set(override))
+        return list(dict.fromkeys(override))
     ranked = [p for p, _ in find_relevant_pages(doc, top_n=6)]
-    return sorted(set(ranked))
+    return list(dict.fromkeys(find_spec_pages(doc) + ranked))
 
 
 def extract_motherboard(doc: ParsedDocument, mode: str = "hybrid", client=None,
@@ -304,7 +322,7 @@ def extract_motherboard(doc: ParsedDocument, mode: str = "hybrid", client=None,
         if client is None:
             from ingest.llm import get_client
             client = get_client()
-        llm_pages = sorted(set([1] + pages))     # cover page carries the model name
+        llm_pages = list(dict.fromkeys([1] + pages))     # cover page carries the model name
         try:
             for name, fv in extract_llm(client, doc, llm_pages, missing).items():
                 if (p := check_field(doc, name, fv)) is None:

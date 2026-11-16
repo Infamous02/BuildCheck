@@ -175,3 +175,52 @@ def test_llm_and_regex_manufacturer_agree():
     client = FakeClient({"manufacturer": llm_field("GIGABYTE", 2, "GIGABYTE")})
     res = extract_motherboard(doc, "llm", client=client, pages=[2, 3])
     assert res.record.data.manufacturer.value == "Gigabyte"
+
+
+# ------------------------------------------------------------ MSI wording
+MSI_COVER = "X870E GAMING PLUS WIFI\nMotherboard\nUser Guide"
+MSI_SPECS = """Specifications
+CPU ● Processor socket AM5
+Chipset AMD X870E Chipset
+● 4x DDR5 memory slots*, supporting up to 256GB**
+● Supports AMD POR Speed and JEDEC Speed
+Memory ● Supports CUDIMM
+Continued on next column"""
+MSI_TAIL = "Continued from previous column\n● ATX Form Factor\nForm Factor\n● 9.6 in. x 12 in."
+
+
+def test_msi_wording_and_spec_page_span():
+    doc = make_doc(MSI_COVER, MSI_SPECS, "filler", MSI_TAIL)
+    res = extract_motherboard(doc, "deterministic")         # auto page choice must reach page 4
+    b = res.record.data
+    assert b.model.value == "X870E GAMING PLUS WIFI"
+    assert b.socket.value == "AM5"
+    assert b.chipset.value == "X870E"
+    assert b.memory_type.value == "DDR5"
+    assert b.memory_slots.value == 4
+    assert b.max_memory_gb.value == 256
+    assert b.form_factor.value == "ATX"
+    assert b.max_memory_speed_mts.value is None             # MSI's manual doesn't state one
+
+
+def test_llm_cannot_invent_unstated_speed():
+    doc = make_doc(MSI_COVER, MSI_SPECS, "filler", MSI_TAIL)
+    # A model "remembering" a spec from training data instead of reading the page.
+    client = FakeClient({"max_memory_speed_mts": llm_field("8400", 2, "Supports DDR5 up to 8400 MT/s")})
+    res = extract_motherboard(doc, "hybrid", client=client)
+    assert res.record.data.max_memory_speed_mts.value is None
+    assert any("not found on page 2" in p for p in res.problems)
+
+
+MSI_REAL = Path("data/parsed/msi_board.json")
+
+
+@pytest.mark.skipif(not MSI_REAL.exists(), reason="run ingest.parse on the MSI X870E manual first")
+def test_real_msi_x870e_manual_deterministic():
+    res = extract_motherboard(ParsedDocument.from_json(MSI_REAL), "deterministic")
+    b = res.record.data
+    assert b.manufacturer.value == "MSI"
+    assert b.model.value == "X870E GAMING PLUS WIFI"
+    assert (b.socket.value, b.chipset.value, b.form_factor.value) == ("AM5", "X870E", "ATX")
+    assert (b.memory_type.value, b.memory_slots.value, b.max_memory_gb.value) == ("DDR5", 4, 256)
+    assert b.max_memory_speed_mts.value is None
