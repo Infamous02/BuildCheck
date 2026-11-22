@@ -47,7 +47,8 @@ def map_board(staged: dict) -> tuple[dict, list[str]]:
         item = data.get(field) or {}
         value = item.get("value")
         if value is None:
-            notes.append(f"{field}: missing")
+            if not any(n.startswith(field + ":") for n in notes):   # extractor may have said why
+                notes.append(f"{field}: missing")
         elif fn:
             try:
                 value = fn(value)
