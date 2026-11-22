@@ -1,0 +1,5 @@
+id,brand,model,source_url,review_status,cooler_type,height_mm,radiator_mm,sockets
+1,Sample,Tower air cooler 155mm,SAMPLE,approved,air,155,,"{LGA1851,LGA1700,AM5,AM4}"
+2,Sample,Low-profile air cooler 47mm,SAMPLE,approved,air,47,,"{LGA1851,LGA1700,AM5,AM4}"
+3,Sample,360mm AIO,SAMPLE,approved,aio,,360,"{LGA1851,LGA1700,AM5,AM4}"
+4,Sample,240mm AIO (AMD only),SAMPLE,approved,aio,,240,"{AM5,AM4}"

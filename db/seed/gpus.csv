@@ -1,0 +1,5 @@
+id,brand,model,source_url,review_status,length_mm,tbp_w,pcie_8pin_required,requires_12v_2x6
+1,Sample,Mid-range GPU 220W,SAMPLE,approved,300,220,1,false
+2,Sample,High-end GPU 360W (12V-2x6),SAMPLE,approved,340,360,0,true
+3,Sample,Flagship GPU 575W (12V-2x6),SAMPLE,approved,358,575,0,true
+4,Sample,Compact GPU 150W,SAMPLE,approved,200,150,1,false

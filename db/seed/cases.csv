@@ -1,0 +1,4 @@
+id,brand,model,source_url,review_status,supported_form_factors,max_gpu_mm,max_cooler_mm,psu_form_factor,max_radiator_mm
+1,Sample,ATX mid tower,SAMPLE,approved,"{E-ATX,ATX,mATX,ITX}",400,170,ATX,360
+2,Sample,mATX tower,SAMPLE,approved,"{mATX,ITX}",330,160,ATX,280
+3,Sample,ITX small form factor,SAMPLE,approved,{ITX},320,70,SFX,240

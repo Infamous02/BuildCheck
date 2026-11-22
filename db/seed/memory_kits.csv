@@ -1,0 +1,5 @@
+id,brand,model,source_url,review_status,mem_type,speed,modules,gb_per_module,form_factor
+1,Sample,DDR5-6000 2x16GB,SAMPLE,approved,DDR5,DDR5-6000,2,16,DIMM
+2,Sample,DDR5-7200 2x24GB,SAMPLE,approved,DDR5,7200 MT/s,2,24,DIMM
+3,Sample,DDR4-3200 2x16GB,SAMPLE,approved,DDR4,3200MHz,2,16,DIMM
+4,Sample,DDR5-6400 4x32GB,SAMPLE,approved,DDR5,6400,4,32,DIMM

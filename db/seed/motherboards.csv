@@ -1,0 +1,6 @@
+id,brand,model,source_url,review_status,revision,socket,chipset,form_factor,mem_type,mem_slots,max_mem_gb,max_mem_speed,shipped_bios,bios_flashback
+1,Sample,Z890 ATX board,SAMPLE,approved,1.0,LGA1851,Z890,ATX,DDR5,4,256,8000,F2,true
+2,Sample,B860 mATX board,SAMPLE,approved,1.0,LGA1851,B860,Micro-ATX,DDR5,2,128,6400,1.10,false
+3,Sample,X870 ATX board,SAMPLE,approved,1.0,AM5,X870,ATX,DDR5,4,256,8000,2.10,true
+4,Sample,B650 ITX board,SAMPLE,approved,1.0,AM5,B650,Mini-ITX,DDR5,2,96,6000,1203,false
+5,Sample,B550 ATX board (DDR4),SAMPLE,approved,1.0,AM4,B550,ATX,DDR4,4,128,3600,F10,true

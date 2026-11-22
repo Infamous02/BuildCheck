@@ -1,0 +1,11 @@
+board_id,cpu_id,min_bios,source_url,review_status
+1,1,,SAMPLE,approved
+1,2,,SAMPLE,approved
+2,1,,SAMPLE,approved
+2,2,,SAMPLE,approved
+3,3,,SAMPLE,approved
+3,4,2.20,SAMPLE,approved
+3,6,,SAMPLE,needs_review
+4,3,,SAMPLE,approved
+4,4,1601,SAMPLE,approved
+5,5,,SAMPLE,approved

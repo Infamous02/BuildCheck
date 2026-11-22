@@ -1,0 +1,6 @@
+id,brand,model,source_url,review_status,watts,form_factor,pcie_8pin,has_12v_2x6
+1,Sample,750W ATX,SAMPLE,approved,750,ATX,3,true
+2,Sample,850W ATX,SAMPLE,approved,850,ATX,4,true
+3,Sample,1000W ATX,SAMPLE,approved,1000,ATX,4,true
+4,Sample,650W SFX,SAMPLE,approved,650,SFX,2,false
+5,Sample,550W ATX (no 12V-2x6),SAMPLE,approved,550,ATX,2,false

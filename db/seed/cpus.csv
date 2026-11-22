@@ -1,0 +1,7 @@
+id,brand,model,source_url,review_status,socket,tdp_w,has_igpu,mem_type,max_mem_speed
+1,Sample,LGA1851 125W CPU with iGPU,SAMPLE,approved,LGA1851,125,true,DDR5,6400
+2,Sample,LGA1851 65W CPU no iGPU,SAMPLE,approved,lga 1851,65,false,DDR5,5600
+3,Sample,AM5 120W CPU with iGPU,SAMPLE,approved,AM5,120,true,DDR5,5600
+4,Sample,AM5 170W CPU with iGPU (newer gen),SAMPLE,approved,am5,170,true,DDR5,5600
+5,Sample,AM4 65W CPU no iGPU,SAMPLE,approved,AM4,65,false,DDR4,3200
+6,Sample,AM5 CPU awaiting review,SAMPLE,needs_review,AM5,105,true,DDR5,5600
