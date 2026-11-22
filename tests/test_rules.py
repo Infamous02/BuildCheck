@@ -11,6 +11,12 @@ from engine.normalize import (normalize_form_factor, normalize_mem_type, normali
                               normalize_socket, parse_pg_array, parse_speed)
 from engine.rules import FAIL, PASS, RULES, SKIP, WARN, compare_bios
 
+try:                                   # pick up TEST_DATABASE_URL from .env, if present
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 
 def results(build):
     return {r.rule_id: r for r in check(build)}

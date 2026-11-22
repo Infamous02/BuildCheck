@@ -20,12 +20,14 @@ for Twin Creek Digital's custom PC build service).
    ```
    py -m pip install -r requirements.txt
    ```
-   If importing psycopg fails with *"An Application Control policy has blocked this file"*
-   (Windows Smart App Control blocking the `psycopg[binary]` DLL), either use a Python 3.12
-   virtual environment, or install plain `psycopg` and add PostgreSQL's `bin` folder (which has `libpq.dll`) to `PATH`.
-3. Create a `.env` file in the repo root. It's git-ignored.
+   If importing psycopg fails with *"An Application Control policy has blocked this file"*,
+   that's Windows Smart App Control checking the new DLL. It cleared on its own here. If it
+   persists, install plain `psycopg` and add PostgreSQL's `bin` folder (which has `libpq.dll`) to `PATH`.
+3. Create a `.env` file in the repo root. It's git-ignored. Percent-encode special characters
+   in the password (`!` → `%21`, `@` → `%40`).
    ```
    DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/buildcheck
+   TEST_DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/buildcheck_test
    ```
 4. Create the tables and load the seed data. This **drops and recreates every table**:
    ```
@@ -78,10 +80,6 @@ Sample builds: 1 = PASS, 2 and 3 = FAIL, 4 = WARN.
 py -m pytest -v
 ```
 
-The rules tests use in-memory fixtures (`tests/conftest.py`), so they don't need a database. To also
-run the integration test, point `TEST_DATABASE_URL` at a **throwaway** database, because the test drops and reloads every table:
-
-```
-set TEST_DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/buildcheck_test
-py -m pytest -v
-```
+The rules tests use in-memory fixtures (`tests/conftest.py`), so they don't need a database. The
+integration test runs when `TEST_DATABASE_URL` is set (in the environment or `.env`) and is skipped
+otherwise. Point it at a **throwaway** database, never `buildcheck`, because it drops and reloads every table.
