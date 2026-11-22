@@ -5,9 +5,9 @@ Each rule inspects a build and returns a RuleResult with a status
 compatible if no rule FAILs; WARNs become technician checklist items.
 
 Usage:
-    python buildcheck.py --cpu r7-9800x3d --board asus-tuf-b650 \
+    py -m engine.buildcheck --cpu r7-9800x3d --board asus-tuf-b650 \
         --ram corsair-6000 --gpu rtx5070 --psu rm750e
-    python buildcheck.py --list        # show available part IDs
+    py -m engine.buildcheck --list        # show available part IDs
 """
 from __future__ import annotations
 
@@ -37,7 +37,10 @@ class Build:
     psu: dict
 
 
-def load_parts(path: str | Path = Path(__file__).with_name("parts.json")) -> dict:
+PARTS_PATH = Path(__file__).resolve().parent.parent / "parts.json"
+
+
+def load_parts(path: str | Path = PARTS_PATH) -> dict:
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
