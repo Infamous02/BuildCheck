@@ -31,20 +31,29 @@ def coerce_json(raw) -> dict:
     """
     Return a dict whether the model gave clean JSON or reasoning text followed by JSON.
     Scans '{' positions from the end so the final answer wins over braces in the reasoning.
+    For nested JSON the scan keeps widening to the outermost object of that final answer
+    (the first '{' found from the end is the innermost field object, not the answer).
     """
     if isinstance(raw, dict):
         return raw
     if not isinstance(raw, str):
         raise ValueError(f"Unexpected model output type: {type(raw).__name__}")
     decoder = json.JSONDecoder()
+    best: tuple[dict, int] | None = None          # (object, end index)
     for i in range(len(raw) - 1, -1, -1):
         if raw[i] == "{":
             try:
-                obj, _ = decoder.raw_decode(raw[i:])
+                obj, end = decoder.raw_decode(raw, i)
             except json.JSONDecodeError:
                 continue
-            if isinstance(obj, dict):
-                return obj
+            if not isinstance(obj, dict):
+                continue
+            # Only an object reaching the end of the final answer can be (a wider view of) it;
+            # sibling field objects and earlier objects in the reasoning end sooner.
+            if best is None or end >= best[1]:
+                best = (obj, end)
+    if best:
+        return best[0]
     raise ValueError(f"No JSON object found in model output:\n{raw[:500]}")
 
 

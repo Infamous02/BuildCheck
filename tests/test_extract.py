@@ -140,6 +140,16 @@ def test_coerce_json_handles_reasoning_text():
         coerce_json("no json here")
 
 
+def test_coerce_json_returns_outer_object_for_nested_answer():
+    # What gemma via LM Studio actually returns: reasoning text, then the nested answer.
+    raw = ('Reasoning: {"draft": 1} looks wrong.\nEND__{\n "chipset": {"value": "B650", "page": 8, '
+           '"evidence": "AMD B650", "confidence": 1},\n "socket": {"value": "AM5", "page": 8, '
+           '"evidence": "AM5", "confidence": 1}\n}')
+    out = coerce_json(raw)
+    assert set(out) == {"chipset", "socket"}
+    assert out["chipset"]["value"] == "B650"
+
+
 # ------------------------------------------------------------ real manual
 REAL = Path("data/parsed/z890.json")
 
