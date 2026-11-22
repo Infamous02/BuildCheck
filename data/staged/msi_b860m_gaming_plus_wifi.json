@@ -1,0 +1,92 @@
+{
+  "record": {
+    "record_id": "ee1cefea-a165-4656-8395-0fbd0be8e405",
+    "doc_id": "87d4ddccffd4feb7cfcab01d84e5fa07f0c1ee81dfa3cc28b53318cbdd3de2fb",
+    "source_file": "B860MGAMINGPLUSWIFI_English.pdf",
+    "method": "deterministic",
+    "status": "pending",
+    "extracted_at": "2026-11-22T22:13:34.528591Z",
+    "data": {
+      "manufacturer": {
+        "value": "MSI",
+        "page": 3,
+        "evidence": "MSI",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "B860M GAMING PLUS WIFI",
+        "page": 1,
+        "evidence": "B860M GAMING PLUS WIFI",
+        "confidence": 0.9
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": "LGA 1851",
+        "page": 16,
+        "evidence": "socket LGA1851",
+        "confidence": 1.0
+      },
+      "chipset": {
+        "value": "B860",
+        "page": 16,
+        "evidence": "Intel\u00ae B860 Chipset",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": null,
+        "page": null,
+        "evidence": null,
+        "confidence": 0.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 16,
+        "evidence": "4x DDR5 memory slots",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 16,
+        "evidence": "4x DDR5 memory slots",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 256,
+        "page": 16,
+        "evidence": "slots*, supporting up to 256GB",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": null,
+        "page": null,
+        "evidence": null,
+        "confidence": 0.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "deterministic",
+    "socket": "deterministic",
+    "chipset": "deterministic",
+    "form_factor": null,
+    "memory_type": "deterministic",
+    "memory_slots": "deterministic",
+    "max_memory_gb": "deterministic",
+    "max_memory_speed_mts": null
+  },
+  "problems": [
+    "form_factor: not found",
+    "max_memory_speed_mts: not found"
+  ],
+  "pages_used": [
+    16,
+    17,
+    18,
+    19,
+    31,
+    30,
+    33
+  ],
+  "backend": "lmstudio"
+}

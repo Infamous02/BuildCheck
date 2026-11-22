@@ -1,0 +1,90 @@
+{
+  "record": {
+    "record_id": "b25db5f4-e69c-47a3-b186-505c81b8473d",
+    "doc_id": "59d102cff1f997ca84fb5734370726bbe61e12bb7e6108457cd60a66a33dec2b",
+    "source_file": "B650M Pro RS WiFi.pdf",
+    "method": "llm",
+    "status": "pending",
+    "extracted_at": "2026-11-22T22:13:22.378003Z",
+    "data": {
+      "manufacturer": {
+        "value": "ASRock",
+        "page": 2,
+        "evidence": "ASRock",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "B650M Pro RS WiFi / B650M Pro RS",
+        "page": 5,
+        "evidence": "ASRock B650M Pro RS WiFi / B650M Pro RS",
+        "confidence": 1.0
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": "AM5",
+        "page": 6,
+        "evidence": "Socket AM5",
+        "confidence": 1.0
+      },
+      "chipset": {
+        "value": "B650",
+        "page": 6,
+        "evidence": "AMD B650",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": "Micro-ATX",
+        "page": 6,
+        "evidence": "Micro ATX Form Factor",
+        "confidence": 1.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 6,
+        "evidence": "4 x DDR5 DIMM Slots",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 6,
+        "evidence": "4 x DDR5 DIMM Slots",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 192,
+        "page": 6,
+        "evidence": "Max. capacity of system memory: 192GB",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": 7200,
+        "page": 6,
+        "evidence": "up to 7200+(OC)*",
+        "confidence": 1.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "llm",
+    "socket": "deterministic",
+    "chipset": "llm",
+    "form_factor": "deterministic",
+    "memory_type": "deterministic",
+    "memory_slots": "deterministic",
+    "max_memory_gb": "llm",
+    "max_memory_speed_mts": "llm"
+  },
+  "problems": [],
+  "pages_used": [
+    6,
+    7,
+    8,
+    9,
+    11,
+    29,
+    5,
+    12
+  ],
+  "backend": "lmstudio"
+}

@@ -1,0 +1,92 @@
+{
+  "record": {
+    "record_id": "675bbfcf-edbf-43fe-b4fc-219216858fea",
+    "doc_id": "5b724d997bb87f3509227b3e08e0b6b4cd1208efbee524fab58b03fcdc7b7754",
+    "source_file": "asrock_z890_pro_rs.pdf",
+    "method": "llm",
+    "status": "pending",
+    "extracted_at": "2026-11-22T22:13:55.084192Z",
+    "data": {
+      "manufacturer": {
+        "value": "ASRock",
+        "page": 1,
+        "evidence": "AsRock",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "Questo manuale d\u2019istruzione \u00e8 fornito da trovaprezzi.it. Scopri tutte le offerte per AsRock Z890 Pro",
+        "page": 1,
+        "evidence": "Questo manuale d\u2019istruzione \u00e8 fornito da trovaprezzi.it. Scopri tutte le offerte per AsRock Z890 Pro",
+        "confidence": 0.9
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": null,
+        "page": null,
+        "evidence": null,
+        "confidence": 0.0
+      },
+      "chipset": {
+        "value": "Z890",
+        "page": 6,
+        "evidence": "Intel\u00ae Z890",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": "ATX",
+        "page": 6,
+        "evidence": "ATX Form Factor",
+        "confidence": 1.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 6,
+        "evidence": "4 x DDR5 DIMM Slots",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 6,
+        "evidence": "4 x DDR5 DIMM Slots",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 256,
+        "page": 6,
+        "evidence": "Max. capacity of system memory: 256GB",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": 9066,
+        "page": 6,
+        "evidence": "up to 9066+(OC)*",
+        "confidence": 1.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "deterministic",
+    "socket": null,
+    "chipset": "llm",
+    "form_factor": "deterministic",
+    "memory_type": "deterministic",
+    "memory_slots": "deterministic",
+    "max_memory_gb": "llm",
+    "max_memory_speed_mts": "llm"
+  },
+  "problems": [
+    "socket: failed schema check (Value error, Unrecognized socket format: 'LGA1851RL-ILM'); value 'LGA1851RL-ILM' dropped"
+  ],
+  "pages_used": [
+    6,
+    7,
+    8,
+    9,
+    11,
+    19,
+    5,
+    12
+  ],
+  "backend": "lmstudio"
+}

@@ -1,0 +1,91 @@
+{
+  "record": {
+    "record_id": "9543ef53-4506-48d2-bb27-fb91bd37e898",
+    "doc_id": "d28f1d2e764787d0a63c12c26356d5b2a38910160dfa9903a4651107e512886c",
+    "source_file": "asus_rog_strix_z890_e_gaming_wifi.pdf",
+    "method": "llm",
+    "status": "pending",
+    "extracted_at": "2026-11-22T22:14:37.431266Z",
+    "data": {
+      "manufacturer": {
+        "value": "ASUS",
+        "page": 1,
+        "evidence": "Asus",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "draobrehtoM",
+        "page": 1,
+        "evidence": "draobrehtoM",
+        "confidence": 0.9
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": "LGA 1851",
+        "page": 8,
+        "evidence": "Socket LGA1851",
+        "confidence": 1.0
+      },
+      "chipset": {
+        "value": "Z890",
+        "page": 8,
+        "evidence": "Intel\u00ae Z890 Chipset",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": "ATX",
+        "page": 12,
+        "evidence": "ATX Form Factor",
+        "confidence": 1.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 8,
+        "evidence": "4 x DIMM slots, max. 192GB, DDR5",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 8,
+        "evidence": "4 x DIMM slots, max. 192GB, DDR5",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 192,
+        "page": 8,
+        "evidence": "4 x DIMM slots, max. 192GB, DDR5",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": 9200,
+        "page": 8,
+        "evidence": "Support up to 9200+MT/s (OC)",
+        "confidence": 1.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "deterministic",
+    "socket": "deterministic",
+    "chipset": "deterministic",
+    "form_factor": "deterministic",
+    "memory_type": "llm",
+    "memory_slots": "llm",
+    "max_memory_gb": "llm",
+    "max_memory_speed_mts": "llm"
+  },
+  "problems": [],
+  "pages_used": [
+    8,
+    9,
+    10,
+    11,
+    18,
+    53,
+    12,
+    61,
+    19
+  ],
+  "backend": "lmstudio"
+}

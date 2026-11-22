@@ -1,0 +1,91 @@
+{
+  "record": {
+    "record_id": "a9ba48c7-eab3-439d-9e1e-e2fd3cf82fbb",
+    "doc_id": "f9ff4122b619e9526a5afe40d0c1ce7e783b4a5243633a32eb4b2dc995909995",
+    "source_file": "asus-motherboard-TUF-GAMING-B850-PLUS-WIFI-owners-manual.pdf",
+    "method": "llm",
+    "status": "pending",
+    "extracted_at": "2026-11-22T22:14:16.320141Z",
+    "data": {
+      "manufacturer": {
+        "value": "ASUS",
+        "page": 2,
+        "evidence": "ASUS",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "TUF GAMING B850-PLUS WIFI",
+        "page": 1,
+        "evidence": "TUF GAMING B850-PLUS WIFI",
+        "confidence": 1.0
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": "AM5",
+        "page": 9,
+        "evidence": "Socket AM5",
+        "confidence": 1.0
+      },
+      "chipset": {
+        "value": "B850",
+        "page": 9,
+        "evidence": "AMD B850 Chipset",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": "ATX",
+        "page": 13,
+        "evidence": "ATX Form Factor",
+        "confidence": 1.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 9,
+        "evidence": "4 x DIMM slots, max. 192GB, DDR5",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 9,
+        "evidence": "4 x DIMM slots, max. 192GB, DDR5",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 192,
+        "page": 9,
+        "evidence": "4 x DIMM slots, max. 192GB, DDR5",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": 8000,
+        "page": 9,
+        "evidence": "Supports up to 8000+MT/s (OC)",
+        "confidence": 1.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "llm",
+    "socket": "deterministic",
+    "chipset": "deterministic",
+    "form_factor": "deterministic",
+    "memory_type": "llm",
+    "memory_slots": "llm",
+    "max_memory_gb": "llm",
+    "max_memory_speed_mts": "llm"
+  },
+  "problems": [],
+  "pages_used": [
+    9,
+    10,
+    11,
+    12,
+    25,
+    31,
+    24,
+    13,
+    16
+  ],
+  "backend": "lmstudio"
+}

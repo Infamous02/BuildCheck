@@ -1,0 +1,88 @@
+{
+  "record": {
+    "record_id": "edb2c54f-d15f-4452-9998-42bc159f7b4a",
+    "doc_id": "9985fa5aa32d9b76726b572f650443f59576859fd95363cee26cf62c092a415a",
+    "source_file": "17517568_1700555425.pdf",
+    "method": "llm",
+    "status": "pending",
+    "extracted_at": "2026-11-22T22:12:50.189963Z",
+    "data": {
+      "manufacturer": {
+        "value": "Gigabyte",
+        "page": 1,
+        "evidence": "GIGABYTE",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "B650M AORUS PRO AX",
+        "page": 1,
+        "evidence": "B650M AORUS PRO AX",
+        "confidence": 0.9
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": "AM5",
+        "page": 7,
+        "evidence": "Socket AM5",
+        "confidence": 1.0
+      },
+      "chipset": {
+        "value": "B650",
+        "page": 7,
+        "evidence": "Chipset \u2022 AMD B650",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": "Micro-ATX",
+        "page": 9,
+        "evidence": "Micro ATX Form Factor",
+        "confidence": 1.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 7,
+        "evidence": "DDR5 5200/4800/4400 MT/s",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 7,
+        "evidence": "4 x DDR5 DIMM sockets",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 192,
+        "page": 7,
+        "evidence": "sockets supporting up to 192 GB",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": 5200,
+        "page": 7,
+        "evidence": "DDR5 5200/4800/4400 MT/s",
+        "confidence": 1.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "deterministic",
+    "socket": "deterministic",
+    "chipset": "llm",
+    "form_factor": "deterministic",
+    "memory_type": "deterministic",
+    "memory_slots": "deterministic",
+    "max_memory_gb": "deterministic",
+    "max_memory_speed_mts": "deterministic"
+  },
+  "problems": [],
+  "pages_used": [
+    7,
+    8,
+    9,
+    10,
+    13,
+    11
+  ],
+  "backend": "lmstudio"
+}

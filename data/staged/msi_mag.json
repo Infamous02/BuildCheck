@@ -1,0 +1,92 @@
+{
+  "record": {
+    "record_id": "001626f0-e779-49aa-aa9a-0716690cf365",
+    "doc_id": "fe136f14d11ebb3b96a9e12b45dcec5381cded14c59d2b3f6ee9072eb3ecce96",
+    "source_file": "msi_mag.pdf",
+    "method": "deterministic",
+    "status": "pending",
+    "extracted_at": "2026-11-22T22:14:46.761843Z",
+    "data": {
+      "manufacturer": {
+        "value": "MSI",
+        "page": 3,
+        "evidence": "MSI",
+        "confidence": 1.0
+      },
+      "model": {
+        "value": "MAG Series",
+        "page": 1,
+        "evidence": "MAG Series",
+        "confidence": 0.9
+      },
+      "part_type": "motherboard",
+      "socket": {
+        "value": "AM5",
+        "page": 17,
+        "evidence": "socket AM5",
+        "confidence": 1.0
+      },
+      "chipset": {
+        "value": "X870E",
+        "page": 17,
+        "evidence": "AMD X870E Chipset",
+        "confidence": 1.0
+      },
+      "form_factor": {
+        "value": "ATX",
+        "page": 20,
+        "evidence": "ATX Form Factor",
+        "confidence": 1.0
+      },
+      "memory_type": {
+        "value": "DDR5",
+        "page": 17,
+        "evidence": "4x DDR5 memory slots",
+        "confidence": 1.0
+      },
+      "memory_slots": {
+        "value": 4,
+        "page": 17,
+        "evidence": "4x DDR5 memory slots",
+        "confidence": 1.0
+      },
+      "max_memory_gb": {
+        "value": 256,
+        "page": 17,
+        "evidence": "slots*, supporting up to 256GB",
+        "confidence": 1.0
+      },
+      "max_memory_speed_mts": {
+        "value": null,
+        "page": null,
+        "evidence": null,
+        "confidence": 0.0
+      }
+    }
+  },
+  "field_methods": {
+    "manufacturer": "deterministic",
+    "model": "deterministic",
+    "socket": "deterministic",
+    "chipset": "deterministic",
+    "form_factor": "deterministic",
+    "memory_type": "deterministic",
+    "memory_slots": "deterministic",
+    "max_memory_gb": "deterministic",
+    "max_memory_speed_mts": null
+  },
+  "problems": [
+    "max_memory_speed_mts: not found"
+  ],
+  "pages_used": [
+    17,
+    18,
+    19,
+    20,
+    60,
+    31,
+    33,
+    30
+  ],
+  "backend": "lmstudio"
+}
