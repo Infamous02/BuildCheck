@@ -2,3 +2,5 @@ pdfplumber
 pydantic>=2
 pytest
 lmstudio
+psycopg[binary]
+python-dotenv
