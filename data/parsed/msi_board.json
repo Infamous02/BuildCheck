@@ -1,0 +1,1101 @@
+{
+  "doc_id": "cd86cd86729b7a5379171142760605399fe5089d99aca21caf94ad636b1a80b6",
+  "source_file": "X870E.pdf",
+  "page_count": 70,
+  "pages": [
+    {
+      "page": 1,
+      "text": "X870E GAMING PLUS WIFI\nMotherboard\nUser Guide",
+      "tables": []
+    },
+    {
+      "page": 2,
+      "text": "Contents\nQuick Start .......................................................................................................................4\nSpecifications ................................................................................................................17\nSpecial Features ............................................................................................................21\nPackage Contents .........................................................................................................22\nBack Panel Connectors ................................................................................................23\nLAN Port LED Status Table ......................................................................................24\nAudio Jacks Connection .........................................................................................24\nInstalling Antenna ...................................................................................................26\nOverview of Components ............................................................................................27\nCPU Socket ..............................................................................................................28\nDDR5 DIMM Slots .....................................................................................................30\nPCI_E1~4: PCIe Expansion Slots .............................................................................32\nM2_1~3: M.2 Slots (Key M) ......................................................................................33\nSATA_P1~P4: SATA 6Gb/s Connectors ....................................................................40\nJAUD1: Front Audio Connector ..............................................................................40\nJFP1, JFP2: Front Panel Connectors ......................................................................41\nJDASH1 : Tuning Controller connector ..................................................................41\nCPU_PWR1~2, ATX_PWR1, PCIE_PWR1: Power Connectors .................................42\nJCI1: Chassis Intrusion Connector .........................................................................43\nJOC_FS1: Safe Boot Jumper ..................................................................................43\nJUSBC1: USB 10Gbps Type-C\u00ae Front Panel Connectors .......................................44\nJUSB3~4: USB 5Gbps Connector............................................................................44\nJUSB1~2, 5: USB 2.0 Connectors ............................................................................45\nJTPM1: TPM Module Connector .............................................................................45\nCPU_FAN1, PUMP_SYS1, SYS_FAN1~6: Fan Connectors .......................................46\nJBAT1: Clear CMOS (Reset BIOS) Jumper ..............................................................47\nJRGB1: RGB LED connector ....................................................................................48\nJARGB_V2_1~3: A-RAINBOW V2 (ARGB Gen2) LED connectors .............................49\nJAF_1: EZ Conn-Header V1 .....................................................................................51\nOnboard LEDs................................................................................................................53\nEZ Debug LED ..........................................................................................................53\nInstalling OS, Drivers & MSI Center. .............................................................................54\nInstalling Drivers with MSI Driver Utility Installer ..................................................55\n2",
+      "tables": []
+    },
+    {
+      "page": 3,
+      "text": "UEFI BIOS .......................................................................................................................58\nBIOS Setup ..............................................................................................................59\nEntering BIOS Setup ...............................................................................................60\nResetting BIOS ........................................................................................................61\nUpdating BIOS ........................................................................................................61\nBlock Diagram ...............................................................................................................63\n3",
+      "tables": []
+    },
+    {
+      "page": 4,
+      "text": "Quick Start\nThis Quick Start provides clear diagrams to help you install the motherboard. Video\ndemonstrations are also available for some installations. Visit these videos by clicking\nthe provided URL on your phone or tablet\u2019s web browser. Alternatively, you can scan\nthe QR code to access the video directly.\nPreparing Tools and Components\nAMD\u00ae AM5 CPU\nAM5 CPU Fan\nChassis\nDDR5 Memory\nPower Supply Unit\nGraphics Card\nThermal Paste\nSATA Hard Disk Drive\nPhillips Screwdriver\nA Package of Screws\n4",
+      "tables": []
+    },
+    {
+      "page": 5,
+      "text": "Safety Information\n\u25cf The components included in this package are prone to damage from electrostatic\ndischarge (ESD). Please adhere to the following instructions to ensure successful\ncomputer assembly.\n\u25cf Ensure that all components are securely connected. Loose connections may cause\nthe computer to not recognize a component or fail to start.\n\u25cf Hold the motherboard by the edges to avoid touching sensitive components.\n\u25cf It is recommended to wear an electrostatic discharge (ESD) wrist strap when\nhandling the motherboard to prevent electrostatic damage. If an ESD wrist strap\nis not available, discharge yourself of static electricity by touching another metal\nobject before handling the motherboard.\n\u25cf Store the motherboard in an electrostatic shielding container or on an anti-static pad\nwhenever the motherboard is not installed.\n\u25cf Before turning on the computer, ensure that there are no loose screws or metal\ncomponents on the motherboard or anywhere within the computer case.\n\u25cf Do not boot the computer before installation is completed. This could cause\npermanent damage to the components as well as injury to the user.\n\u25cf If you need help during any installation step, please consult a certified computer\ntechnician.\n\u25cf Always turn off the power supply and unplug the power cord from the power outlet\nbefore installing or removing any computer component.\n\u25cf Keep this user guide for future reference.\n\u25cf Keep this motherboard away from humidity.\n\u25cf Make sure that your electrical outlet provides the same voltage as is indicated on the\nPSU, before connecting the PSU to the electrical outlet.\n\u25cf Place the power cord such a way that people can not step on it. Do not place\nanything over the power cord.\n\u25cf All cautions and warnings on the motherboard should be noted.\n\u25cf If any of the following situations arises, get the motherboard checked by service\npersonnel:\n\u25cf Liquid has penetrated into the computer.\n\u25cf The motherboard has been exposed to moisture.\n\u25cf The motherboard does not work well or you can not get it work according to user\nguide.\n\u25cf The motherboard has been dropped and damaged.\n\u25cf The motherboard has obvious sign of breakage.\n\u25cf Do not leave this motherboard in an environment above 60\u00b0C (140\u00b0F), it may damage\nthe motherboard.\n5",
+      "tables": []
+    },
+    {
+      "page": 6,
+      "text": "Case stand-off notification\nTo prevent damage to the motherboard, any unnecessary mounting stand-off between\nthe motherboard circuits and the computer case is prohibited. The Case standoff keep\nout zone signs will be marked on the backside of motherboard (as shown below) to\nserve as a warning to user.\nAvoid collision notification\nProtective paint is printed around each screw hole to prevent parts from being\nscratched.\n* The illustration above is for reference only and may vary from the motherboard you\npurchased.\n6",
+      "tables": []
+    },
+    {
+      "page": 7,
+      "text": "Installing a Processor\n\u26bd\n22\n\u25cf https://msi.gm/SDBE5855\n11\n33\n77\n44\n66\n55\n1100\n1111 88\n99\n7",
+      "tables": []
+    },
+    {
+      "page": 8,
+      "text": "\u26a0Important\nIf you are installing the screw-type CPU heatsink, please follow the figure below to\nremove the retention module first and then install the heatsink.\n8",
+      "tables": []
+    },
+    {
+      "page": 9,
+      "text": "Installing DDR5 memory\n\u26bd\n\u25cf https://msi.gm/S647FF99\nDIMMA1\nDIMMA2 DIMMA2 DIMMA2\nDIMMB2 DIMMB1\nDIMMB2\n9",
+      "tables": []
+    },
+    {
+      "page": 10,
+      "text": "10\nDEL\nDDH\nWS\nTESER\nConnecting the Front Panel Header\n\u26bd\n\u25cf https://msi.gm/S8EF7577\nW S\nREW\nDE +\nL\nD\nD\nE -\nD\nD L\nH\nE R L E W RE O W P OP\nO\nP\nW\nS\nTESER\nPower LED Power Switch\n2 10\nJFP1 1 9\nReserved\nHDD LED Reset Switch\nJFP1\nHDD LED -\nHDD LED\nHDD LED +\nPOWER LED -\nPOWER LED\nPOWER LED +",
+      "tables": []
+    },
+    {
+      "page": 11,
+      "text": "Installing the Motherboard\n11\n\u26bd\n\u25cf https://msi.gm/S4BA9046\nTorque:\n3 kgf\u00b7cm*\n22\n*3 kgf\u00b7cm\n= 0.3 N\u00b7m\n= 2.6 lbf\u00b7in\n11",
+      "tables": []
+    },
+    {
+      "page": 12,
+      "text": "Connecting the Power Connectors\n\u26bd\n\u25cf https://msi.gm/SD937E2C\nATX_PWR1\nCPU_PWR1~2\nPCIE_PWR1\n12",
+      "tables": []
+    },
+    {
+      "page": 13,
+      "text": "Installing SATA Drives\n\u26bd\n\u25cf https://msi.gm/S9369131\n11\n22\n33\n55\n44\n13",
+      "tables": []
+    },
+    {
+      "page": 14,
+      "text": "Installing a Graphics Card\n\u26bd\n\u25cf https://msi.gm/SBC41FF1\n11\n33\n22\n55\n44\n66\n14",
+      "tables": []
+    },
+    {
+      "page": 15,
+      "text": "Connecting Peripheral Devices\n15",
+      "tables": []
+    },
+    {
+      "page": 16,
+      "text": "Power On\n11 22\n33\n44\n16",
+      "tables": []
+    },
+    {
+      "page": 17,
+      "text": "Specifications\n\u25cf Supports AMD Ryzen\u2122 9000/ 8000/ 7000 Series Desktop\nProcessors*\nCPU \u25cf Processor socket AM5\n* Please go to www.msi.com to get the newest support status as new processors\nare released.\nChipset AMD X870E Chipset\n\u25cf 4x DDR5 memory slots*, supporting up to 256GB**\n\u25cf Supports AMD POR Speed and JEDEC Speed\n\u25cf Supports Memory Overclocking and AMD EXPO\u2122\n\u25cf Supports Dual-Channel mode\n\u25cf Supports Non-ECC, Un-buffered memory\nMemory \u25cf Supports CUDIMM, Clock Driver bypass mode only***\n* The DIMM slots on this motherboard have double-sided latches.\n** Memory compatibility and supported speeds can vary depending on the CPU\nand memory configuration. For detailed information, please refer to the Memory\nCompatibility List available on the product\u2019s Support page or visit\nhttps://www.msi.com/support/.\n*** CUDIMM support and POR boot frequency may vary by CPU series, with\nmanual overclocking available after boot. Certain CPUs may fail to boot, but\nfuture BIOS updates will improve compatibility.\n\u25cf 3x PCIe x16 slots\n\u25cf PCI_E1 slot (From CPU)\n\u25cf Supports up to PCIe 5.0 x16 (For Ryzen\u2122 9000/ 7000\nSeries processors)\n\u25cf Supports up to PCIe 4.0 x8 (For Ryzen\u2122 8700/ 8600/\n8400 Series processors)\nExpansion Slots \u25cf Supports up to PCIe 4.0 x4 (For Ryzen\u2122 8500/ 8300\nSeries processors)\n\u25cf PCI_E3 supports up to PCIe 4.0 x4 (From X870E chipset)\n\u25cf PCI_E4 supports up to PCIe 3.0 x1 (From X870E chipset)*\n\u25cf 1x PCIe x1 slot\n\u25cf PCI_E2 supports up to PCIe 3.0 x1 (From X870E chipset)\n\u25cf 1x HDMI\u2122 2.1 port, supporting a maximum resolution of\n4K 60Hz*/ **\n\u25cf 1x USB4 port, supporting DisplayPort 1.4 with HBR3 over\nOnboard Graphics\nUSB Type-C\u00ae with a maximum resolution of 4K 120 Hz*/**\n* Available only on processors featuring integrated graphics.\n** Graphics specifications may vary depending on the CPU installed.\nSATA Ports \u25cf 4x SATA 6Gb/s ports (From X870E chipset)\nContinued on next column\n17",
+      "tables": [
+        [
+          [
+            "Specificatio CPU",
+            "ns \u25cf Supports AMD Ryzen\u2122 9000/ 8000/ 7000 Series Desktop Processors* \u25cf Processor socket AM5 * Please go to www.msi.com to get the newest support status as new processors are released."
+          ],
+          [
+            "Chipset",
+            "AMD X870E Chipset"
+          ],
+          [
+            "Memory",
+            "\u25cf 4x DDR5 memory slots*, supporting up to 256GB** \u25cf Supports AMD POR Speed and JEDEC Speed \u25cf Supports Memory Overclocking and AMD EXPO\u2122 \u25cf Supports Dual-Channel mode \u25cf Supports Non-ECC, Un-buffered memory \u25cf Supports CUDIMM, Clock Driver bypass mode only*** * The DIMM slots on this motherboard have double-sided latches. ** Memory compatibility and supported speeds can vary depending on the CPU and memory configuration. For detailed information, please refer to the Memory Compatibility List available on the product\u2019s Support page or visit https://www.msi.com/support/. *** CUDIMM support and POR boot frequency may vary by CPU series, with manual overclocking available after boot. Certain CPUs may fail to boot, but future BIOS updates will improve compatibility."
+          ],
+          [
+            "Expansion Slots",
+            "\u25cf 3x PCIe x16 slots \u25cf PCI_E1 slot (From CPU) \u25cf Supports up to PCIe 5.0 x16 (For Ryzen\u2122 9000/ 7000 Series processors) \u25cf Supports up to PCIe 4.0 x8 (For Ryzen\u2122 8700/ 8600/ 8400 Series processors) \u25cf Supports up to PCIe 4.0 x4 (For Ryzen\u2122 8500/ 8300 Series processors) \u25cf PCI_E3 supports up to PCIe 4.0 x4 (From X870E chipset) \u25cf PCI_E4 supports up to PCIe 3.0 x1 (From X870E chipset)* \u25cf 1x PCIe x1 slot \u25cf PCI_E2 supports up to PCIe 3.0 x1 (From X870E chipset)"
+          ],
+          [
+            "Onboard Graphics",
+            "\u25cf 1x HDMI\u2122 2.1 port, supporting a maximum resolution of 4K 60Hz*/ ** \u25cf 1x USB4 port, supporting DisplayPort 1.4 with HBR3 over USB Type-C\u00ae with a maximum resolution of 4K 120 Hz*/** * Available only on processors featuring integrated graphics. ** Graphics specifications may vary depending on the CPU installed."
+          ],
+          [
+            "SATA Ports",
+            "\u25cf 4x SATA 6Gb/s ports (From X870E chipset)"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Continued from previous column\n\u25cf 3x M.2 slots (Key M)\n\u25cf M2_1 slot (From CPU)\n\u25cf Supports up to PCIe 5.0 x4 (For Ryzen\u2122 9000/ 7000\nSeries processors)\n\u25cf Supports up to PCIe 4.0 x4 (For Ryzen\u2122 8000 Series\nprocessors)\nM.2 SSD Slots \u25cf Supports 2260/ 2280 storage devices\n\u25cf M2_2 slot (From X870E chipset)\n\u25cf Supports up to PCIe 4.0 x4\n\u25cf Supports 2260/ 2280 storage devices\n\u25cf M2_3 slot (From X870E chipset)\n\u25cf Supports up to PCIe 4.0 x4\n\u25cf Supports 2280/ 22110 storage devices\n\u25cf Supports RAID 0, RAID 1 and RAID 5 for M.2 NVMe storage\ndevices\nRAID\n\u25cf RAID 5 configuration is only supported by Ryzen\u2122 9000\nseries processors.\nRealtek\u00ae ALC897\nAudio\n\u25cf 7.1-Channel High Definition Audio\nLAN \u25cf 1x Realtek\u00ae 8126VB 5Gbps LAN controller\nWi-Fi 7\n\u25cf The Wireless module is pre-installed in the M.2 (Key-E)slot\n\u25cf Supports MU-MIMO TX/RX, 2.4GHz/ 5GHz/ 6GHz* (320MHz)\nup to 5.8Gbps\n\u25cf Supports 802.11 a/ b/ g/ n/ ac/ ax/ be\nWi-Fi & Bluetooth\u00ae\n\u25cf Supports Bluetooth\u00ae 5.4**, MLO, 4KQAM\n* 6GHz band support may depend on every country\u2019s regulations and Wi-Fi 7 will\nbe ready in Windows 11 version 24H2.\n** The Bluetooth version may be updated, please refer to the Wi-Fi chipset\nvendor\u2019s website for details. Bluetooth 5.4 will be ready in Windows 11 version\n24H2.\n\u25cf 1x 24-pin ATX main power connector\nPower Connectors \u25cf 2x 8-pin +12V power connectors\n\u25cf 1x 8-pin PCIe power connector\nContinued on next column\n18",
+      "tables": [
+        [
+          [
+            "M.2 SSD Slots",
+            "\u25cf 3x M.2 slots (Key M) \u25cf M2_1 slot (From CPU) \u25cf Supports up to PCIe 5.0 x4 (For Ryzen\u2122 9000/ 7000 Series processors) \u25cf Supports up to PCIe 4.0 x4 (For Ryzen\u2122 8000 Series processors) \u25cf Supports 2260/ 2280 storage devices \u25cf M2_2 slot (From X870E chipset) \u25cf Supports up to PCIe 4.0 x4 \u25cf Supports 2260/ 2280 storage devices \u25cf M2_3 slot (From X870E chipset) \u25cf Supports up to PCIe 4.0 x4 \u25cf Supports 2280/ 22110 storage devices"
+          ],
+          [
+            "RAID",
+            "\u25cf Supports RAID 0, RAID 1 and RAID 5 for M.2 NVMe storage devices \u25cf RAID 5 configuration is only supported by Ryzen\u2122 9000 series processors."
+          ],
+          [
+            "Audio",
+            "Realtek\u00ae ALC897 \u25cf 7.1-Channel High Definition Audio"
+          ],
+          [
+            "LAN",
+            "\u25cf 1x Realtek\u00ae 8126VB 5Gbps LAN controller"
+          ],
+          [
+            "Wi-Fi & Bluetooth\u00ae",
+            "Wi-Fi 7 \u25cf The Wireless module is pre-installed in the M.2 (Key-E)slot \u25cf Supports MU-MIMO TX/RX, 2.4GHz/ 5GHz/ 6GHz* (320MHz) up to 5.8Gbps \u25cf Supports 802.11 a/ b/ g/ n/ ac/ ax/ be \u25cf Supports Bluetooth\u00ae 5.4**, MLO, 4KQAM * 6GHz band support may depend on every country\u2019s regulations and Wi-Fi 7 will be ready in Windows 11 version 24H2. ** The Bluetooth version may be updated, please refer to the Wi-Fi chipset vendor\u2019s website for details. Bluetooth 5.4 will be ready in Windows 11 version 24H2."
+          ],
+          [
+            "Power Connectors",
+            "\u25cf 1x 24-pin ATX main power connector \u25cf 2x 8-pin +12V power connectors \u25cf 1x 8-pin PCIe power connector"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 19,
+      "text": "Continued from previous column\n\u25cf 1x USB 10Gbps Type-C\u00ae front panel port (From X870E\nchipset)\nInternal USB \u25cf 2x USB 5Gbps connectors (From X870E chipset)\nConnectors \u25cf Supports additional 4 USB 5Gbps ports\n\u25cf 3x USB 2.0 connectors (From X870E chipset)\n\u25cf Supports additional 6 USB 2.0 ports\n\u25cf 1x 4-pin CPU fan connector\nFan Connectors \u25cf 1x 4-pin water-pump/ system fan connector\n\u25cf 6x 4-pin system fan connectors\n\u25cf 1x Front panel audio connector\n\u25cf 2x System panel connectors\n\u25cf 1x Chassis Intrusion connector\nSystem Connectors\n\u25cf 1x TPM module connector\n\u25cf 1x Tuning Controller connector\n\u25cf 1x EZ Conn-Header V1 (JAF_1)\n\u25cf 1x Clear CMOS jumper\nJumpers \u25cf 1x OC safe boot jumper\n\u25cf 1x 4-pin RGB LED connector\n\u25cf 3x 3-pin A-RAINBOW V2 (ARGB Gen2) LED connectors\nLED Features\n\u25cf 4x EZ Debug LED\n\u25cf 1x EZ Memory Detection LED\n\u25cf 1x Clear CMOS button\n\u25cf 1x Flash BIOS button\n\u25cf 1x HDMI\u2122 port\n\u25cf 1x USB 5Gbps Type-A port (From CPU)\n\u25cf 1x USB 40Gbps Type-C port (From ASM4242)\nBack Panel \u25cf 2x USB 10Gbps Type-A ports (From CPU)\nConnectors &\n\u25cf 4x USB 2.0 ports (From X870E chipset)\nOthers\n\u25cf 1x 5G LAN (RJ45) jack\n\u25cf 1x USB 5Gbps Type-A port (From X870E chipset)\n\u25cf 1x USB 20Gbps Type-C port (From X870E chipset)\n\u25cf 2x Wi-Fi Antenna connectors\n\u25cf 3x audio jacks\nContinued on next column\n19",
+      "tables": [
+        [
+          [
+            "Internal USB Connectors",
+            "\u25cf 1x USB 10Gbps Type-C\u00ae front panel port (From X870E chipset) \u25cf 2x USB 5Gbps connectors (From X870E chipset) \u25cf Supports additional 4 USB 5Gbps ports \u25cf 3x USB 2.0 connectors (From X870E chipset) \u25cf Supports additional 6 USB 2.0 ports"
+          ],
+          [
+            "Fan Connectors",
+            "\u25cf 1x 4-pin CPU fan connector \u25cf 1x 4-pin water-pump/ system fan connector \u25cf 6x 4-pin system fan connectors"
+          ],
+          [
+            "System Connectors",
+            "\u25cf 1x Front panel audio connector \u25cf 2x System panel connectors \u25cf 1x Chassis Intrusion connector \u25cf 1x TPM module connector \u25cf 1x Tuning Controller connector \u25cf 1x EZ Conn-Header V1 (JAF_1)"
+          ],
+          [
+            "Jumpers",
+            "\u25cf 1x Clear CMOS jumper \u25cf 1x OC safe boot jumper"
+          ],
+          [
+            "LED Features",
+            "\u25cf 1x 4-pin RGB LED connector \u25cf 3x 3-pin A-RAINBOW V2 (ARGB Gen2) LED connectors \u25cf 4x EZ Debug LED \u25cf 1x EZ Memory Detection LED"
+          ],
+          [
+            "Back Panel Connectors & Others",
+            "\u25cf 1x Clear CMOS button \u25cf 1x Flash BIOS button \u25cf 1x HDMI\u2122 port \u25cf 1x USB 5Gbps Type-A port (From CPU) \u25cf 1x USB 40Gbps Type-C port (From ASM4242) \u25cf 2x USB 10Gbps Type-A ports (From CPU) \u25cf 4x USB 2.0 ports (From X870E chipset) \u25cf 1x 5G LAN (RJ45) jack \u25cf 1x USB 5Gbps Type-A port (From X870E chipset) \u25cf 1x USB 20Gbps Type-C port (From X870E chipset) \u25cf 2x Wi-Fi Antenna connectors \u25cf 3x audio jacks"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 20,
+      "text": "Continued from previous column\nI/O Controller NUVOTON NCT6687-R Controller Chip\n\u25cf CPU/ System/ Chipset temperature detection\nHardware Monitor \u25cf CPU/ System/ Pump fan speed detection\n\u25cf CPU/ System/ Pump fan speed control\n\u25cf ATX Form Factor\nForm Factor\n\u25cf 9.6 in. x 12 in. (244 mm x 305 mm)\n\u25cf 1x 256 Mb flash\n\u25cf UEFI AMI BIOS\nBIOS Features\n\u25cf ACPI 6.5, SMBIOS 3.7\n\u25cf Multi-language\n\u25cf Drivers\n\u25cf MSI Center\n\u25cf Acrobat\n\u25cf Adobe Creative Cloud\nSoftware\n\u25cf AIDA64 Extreme - MSI Edition\n\u25cf Dropbox\n\u25cf CPU-Z MSI GAMING\n\u25cf Norton 360\n20",
+      "tables": [
+        [
+          [
+            "I/O Controller",
+            "NUVOTON NCT6687-R Controller Chip"
+          ],
+          [
+            "Hardware Monitor",
+            "\u25cf CPU/ System/ Chipset temperature detection \u25cf CPU/ System/ Pump fan speed detection \u25cf CPU/ System/ Pump fan speed control"
+          ],
+          [
+            "Form Factor",
+            "\u25cf ATX Form Factor \u25cf 9.6 in. x 12 in. (244 mm x 305 mm)"
+          ],
+          [
+            "BIOS Features",
+            "\u25cf 1x 256 Mb flash \u25cf UEFI AMI BIOS \u25cf ACPI 6.5, SMBIOS 3.7 \u25cf Multi-language"
+          ],
+          [
+            "Software",
+            "\u25cf Drivers \u25cf MSI Center \u25cf Acrobat \u25cf Adobe Creative Cloud \u25cf AIDA64 Extreme - MSI Edition \u25cf Dropbox \u25cf CPU-Z MSI GAMING \u25cf Norton 360"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 21,
+      "text": "Special Features\nMSI Center DIY Friendly\n\u25cf MSI AI Engine \u25cf PCI-E Steel Armor\n\u25cf Mystic Light \u25cf EZ DEBUG LED\n\u25cf Frozr AI Cooling \u25cf EZ LED Control\n\u25cf User Scenario\nAudio\n\u25cf True Color \u25cf Audio Boost\n\u25cf Live Update\n\u25cf Hardware Monitoring RGB Support\n\u25cf MSI Companion \u25cf Mystic Light Extension (RGB +\nA-RAINBOW V2)\n\u25cf System Diagnosis\n\u25cf Ambient Devices Support\n\u25cf LAN Manager\nBIOS\nPerformance\n\u25cf Click BIOS X\n\u25cf Core Boost\n\u25cf Dual CPU Power\n\u25cf Memory Boost\n\u25cf Lightning Gen 5 PCI-E\n\u25cf Lightning Gen 5 M.2 Slot\n\u25cf 2oz Copper thickened PCB\n21",
+      "tables": []
+    },
+    {
+      "page": 22,
+      "text": "Package Contents\nPlease check the contents of your motherboard package. It should contain:\nBoard\n\u25cf 1x Motherboard\nDocumentation\n\u25cf 1x Quick installation guide\n\u25cf 1x European Union Regulatory Notices\nCables\n\u25cf 2x SATA 6Gb/s cables\n\u25cf 1x 1 to 2 EZ Conn-Cable (V1)\nAccessories\n\u25cf 1x EZ Wi-Fi antenna\n\u25cf 2x EZ M.2 Clip II\n\u25cf 1x EZ M.2 Clip II Remover\n\u26a0Important\nIf any of the above items are damaged or missing, please contact your retailer.\n22",
+      "tables": []
+    },
+    {
+      "page": 23,
+      "text": "Back Panel Connectors\n11 22 33 44 55 66 77 88\n99 1100 1111 1122 1133 1144\nItem Description\nClear CMOS button - Power off your computer. Press and hold the Clear\n1\nCMOS button for about 5-10 seconds to reset BIOS to default values.\n2\nHDMI\u2122 port\nUSB 5Gbps Type-A port (From CPU)\n3\n\u25cf Flash BIOS port\n4 USB 10Gbps Type-A ports (From CPU)\n5 USB 2.0 Type-A ports (From chipset)\n6 5Gbps LAN port\n7 Wi-Fi Antenna connectors\n8 Line-in jack\nFlash BIOS button - Please refer to page 62 for details about updating BIOS\n9\nwith Flash BIOS button.\nUSB 40Gbps Type-C port (From ASM4242)\n10\n\u25cf Supports DisplayPort over USB Type-C\u00ae\n11 USB 5Gbps Type-A port (From X870E chipset)\n12 USB 20Gbps Type-C port (From X870E chipset)\n13 Mic-in jack\n14 Line-out jack\n23",
+      "tables": [
+        [
+          [
+            "Item",
+            "Description"
+          ],
+          [
+            "1",
+            "Clear CMOS button - Power off your computer. Press and hold the Clear CMOS button for about 5-10 seconds to reset BIOS to default values."
+          ],
+          [
+            "2",
+            "HDMI\u2122 port"
+          ],
+          [
+            "3",
+            "USB 5Gbps Type-A port (From CPU) \u25cf Flash BIOS port"
+          ],
+          [
+            "4",
+            "USB 10Gbps Type-A ports (From CPU)"
+          ],
+          [
+            "5",
+            "USB 2.0 Type-A ports (From chipset)"
+          ],
+          [
+            "6",
+            "5Gbps LAN port"
+          ],
+          [
+            "7",
+            "Wi-Fi Antenna connectors"
+          ],
+          [
+            "8",
+            "Line-in jack"
+          ],
+          [
+            "9",
+            "Flash BIOS button - Please refer to page 62 for details about updating BIOS with Flash BIOS button."
+          ],
+          [
+            "10",
+            "USB 40Gbps Type-C port (From ASM4242) \u25cf Supports DisplayPort over USB Type-C\u00ae"
+          ],
+          [
+            "11",
+            "USB 5Gbps Type-A port (From X870E chipset)"
+          ],
+          [
+            "12",
+            "USB 20Gbps Type-C port (From X870E chipset)"
+          ],
+          [
+            "13",
+            "Mic-in jack"
+          ],
+          [
+            "14",
+            "Line-out jack"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 24,
+      "text": "LAN Port LED Status Table\nLink/ Activity LED Speed LED\nLink/ Activity LED Speed LED\nStatus Description Status Speed\nOff No link Off 10 Mbps\nYellow blinking slowly Linked Green 100Mbps/ 1Gbps/ 2.5Gbps\nYellow blinking rapidly Data activity Orange 5Gbps\nAudio Jacks Connection\nAudio jacks to headphone and microphone diagram\nAudio jacks to stereo speakers diagram\nAUDIO INPUT\n24",
+      "tables": [
+        [
+          [
+            "Link/ Activity LED",
+            "",
+            "Speed LED",
+            ""
+          ],
+          [
+            "Status",
+            "Description",
+            "Status",
+            "Speed"
+          ],
+          [
+            "Off",
+            "No link",
+            "Off",
+            "10 Mbps"
+          ],
+          [
+            "Yellow blinking slowly",
+            "Linked",
+            "Green",
+            "100Mbps/ 1Gbps/ 2.5Gbps"
+          ],
+          [
+            "Yellow blinking rapidly",
+            "Data activity",
+            "Orange",
+            "5Gbps"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 25,
+      "text": "Audio jacks to 4-channel speakers diagram\nAUDIO INPUT\nRear Front\nAudio jacks to 5.1-channel speakers diagram\nAUDIO INPUT\nRear Front\nCenter/\nSubwoofer\nAudio jacks to 7.1-channel speakers diagram\nAUDIO INPUT\nRear Front\nSide Center/\nSubwoofer\nFront Panel\n25",
+      "tables": []
+    },
+    {
+      "page": 26,
+      "text": "Installing Antenna\n1. Connect two antenna cables tight to the Wi-Fi antenna connectors as shown.\n2. Place the antenna as high as possible for a better signal.\n26",
+      "tables": []
+    },
+    {
+      "page": 27,
+      "text": "Overview of Components\nJARGB_V2_3\nSYS_FAN6\nSYS_FAN5\nATX_PWR1\nJUSB5\nJUSBC1\nM2_1\nM2_2\nJUSB4\nJARGB_V2_2\nSYS_FAN4\nJFP2\nJFP1\n27\nDIMMA1 DIMMA2 DIMMB1 DIMMB2\nCPU_FAN1 PUMP_SYS1 SYS_FAN1\nSATA\u25bc_P1\u25b2_P2\nSATA\u25bc_P3\u25b2_P4\nJAUD1 JRGB1\nCPU_PWR1\nJARGB_V2_1\nCPU_PWR2\nSocket\nProcessor\nJUSB1 JUSB2 SYS_FAN3 JUSB3 JBAT1\nPCI_E1\nPCI_E2\nPCI_E3\nM2_3\nPCI_E4\nJCI1 JOCFS1\nJTPM1\nSYS_FAN2\nJDASH1 JAF_1 PCIE_PWR1",
+      "tables": []
+    },
+    {
+      "page": 28,
+      "text": "CPU Socket\nThe AM5 socket is a modern CPU socket designed for AMD processors. It is a key\ncomponent in contemporary computing systems, providing the foundation for\npowerful and efficient CPUs.\nInstalling the CPU to the AM5 socket\nThe surface of the AM5 CPU has two notches and a golden triangle to assist in\ncorrectly lining up the CPU for motherboard placement. The golden triangle is the Pin\n1 indicator.\nTo install the CPU, align the two notches on the AM5 socket with the two corresponding\nnotches on the CPU. Please ensure that the gold triangle on the CPU serves as the PIN\n1 indicator during the installation process.\nPin 1 indicator\n53.5 mm\nNotches\nDistance from the center of the CPU socket to the nearest DIMM slot.\n28",
+      "tables": []
+    },
+    {
+      "page": 29,
+      "text": "\u26a0Important\n\u25cf When changing the processor, the system configuration could be cleared and reset\nBIOS to default values, due to the AM5 processor\u2019s architecture.\n\u25cf Please ensure that the motherboard and power supply are turned off and always\ndisconnect the power cord from the power outlet before installing or removing the\nCPU.\n\u25cf Please retain the CPU protective cap after installing the processor. MSI will deal with\nReturn Merchandise Authorization (RMA) requests if only the motherboard comes\nwith the protective cap on the CPU socket.\n\u25cf Whenever the CPU is not installed, always protect the CPU socket pins by covering\nthe socket with the protective cap.\n\u25cf The CPU should only fit in one orientation, so do not force it. Gently place the CPU\ninto the socket without applying excessive pressure.\n\u25cf Please handle the CPU by the edges only; avoid touching the pins or the surface of\nthe CPU. Any damage to the pins can result in a malfunctioning CPU.\n\u25cf When installing a CPU, always remember to install a CPU heatsink. A CPU heatsink is\nnecessary to prevent overheating and maintain system stability.\n\u25cf Please install the CPU cooler according to the manufacturer\u2019s instructions. Make\nsure it is securely a tight seal with the CPU and attached to the motherboard to\nensure proper heat dissipation.\n\u25cf Overheating can seriously damage the CPU and motherboard. Always make sure the\ncooling fans work properly to protect the CPU from overheating. Be sure to apply an\neven layer of thermal paste (or thermal tape) between the CPU and the heatsink to\nenhance heat dissipation.\n\u25cf This motherboard is designed to support overclocking. Before attempting to\noverclock, please make sure that all other system components can tolerate\noverclocking. Any attempt to operate beyond product specifications is not\nrecommended. MSI\u00ae does not guarantee the damages or risks caused by inadequate\noperation beyond product specifications.\n29",
+      "tables": []
+    },
+    {
+      "page": 30,
+      "text": "DDR5 DIMM Slots\nThe DDR5 DIMM slot is a dedicated connector designed to accommodate DDR5 (Double\nData Rate 5) memory modules. It represents the latest standard in computer memory,\nproviding enhanced data transfer speeds and efficiency.\nDIMMA1 DIMMB1\nDIMMA2 DIMMB2\nChannel A Channel B\nMemory module installation recommendation\nDIMMA2\n\u26a0Important\nAlways insert memory modules in the DIMMA2 slot first.\n30",
+      "tables": []
+    },
+    {
+      "page": 31,
+      "text": "DIMMB2\nDIMMA2\nDIMMB2\nDIMMB1\nDIMMA2\nDIMMA1\n\u26a0Important\n\u25cf Align the notch on the DDR5 module with the notch on the memory slot to ensure\nproper orientation. Do not force the module into the slot; it should slide in easily if\nproperly aligned.\n\u25cf To ensure system stability for Dual channel mode, memory modules must be of the\nsame type, number and density.\n\u25cf Some memory modules may operate at a lower frequency than the marked value\nwhen overclocking due to the memory frequency operates dependent on its Serial\nPresence Detect (SPD). Go to BIOS and find the DRAM Speed to set the memory\nfrequency if you want to operate the memory at the marked or at a higher frequency.\n\u25cf It is recommended to use a more efficient memory cooling system for full DIMMs\ninstallation or overclocking.\n\u25cf The stability and compatibility of installed memory module depend on installed CPU\nand devices when overclocking.\n\u25cf Please refer to www.msi.com for more information on compatible memory.\n31",
+      "tables": []
+    },
+    {
+      "page": 32,
+      "text": "PCI_E1~4: PCIe Expansion Slots\nPCI Express (PCIe) expansion slots are used to connect add-on cards to the\nmotherboard. These cards can provide additional functionality to your computer, such\nas graphics, networking, or storage.\nPCI_E1: PCIe 5.0 x16 (From CPU)\nPCI_E2: PCIe 3.0 x1 (From Chipset)\nPCI_E3: PCIe 4.0 x4 (From Chipset)\nPCI_E4: PCIe 3.0 x1 (From Chipset)\n\u26a0Important\n\u25cf If you install a large and heavy graphics card, you need to use a tool such as MSI\nGraphics Card Bolster to support its weight to prevent deformation of the slot.\n\u25cf For a single PCIe x16 expansion card installation with optimum performance, using\nthe PCI_E1 slot is recommended.\n\u25cf When adding or removing expansion cards, always turn off the power supply and\nunplug the power supply power cable from the power outlet. Read the expansion\ncard\u2019s documentation to check for any necessary additional hardware or software\nchanges.\n32",
+      "tables": []
+    },
+    {
+      "page": 33,
+      "text": "M2_1~3: M.2 Slots (Key M)\nThe M.2 slot is a small, high-speed expansion slot on a motherboard. It can be used to\nconnect an M.2 SSD, which is a type of solid-state drive that offers faster performance\nthan traditional SATA SSDs.\nWatch the video to learn how to\nInstall M.2 SSD with Screwless\nM.2 Shield Frozr heatsink.\n\u26bd\nM2_1\nM2_2 \u25cf https://msi.gm/S7F5D000\nM2_3\n\u26a0Important\nIf your M.2 SSD equips its own heatsink, please note the following:\n\u25cf Remove the M.2 plate or rubber cube in the M.2 slot before installing M.2 SSD. Do not\nre-install the heatsink supplied with the motherboard.\n\u25cf Ensure that the M.2 SSD heatsink you use fits the size limits to prevent damage.\nM.2 SSD Heatsink Size Restrictions\nIf you need to purchase an additional heatsink, please refer to the diagram below to\nconfirm the M.2 installation space dimensions. Please also consider the height of the\ninstalled PCIe expansion card when determining M.2 installation space.\nM2_1 Width: up to 25 mm\nM2_2 Width: up to 25 mm\nM2_3 Width: up to 25 mm\n33",
+      "tables": [
+        [
+          [
+            "M2_1",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "2_2",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "M2_3",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 34,
+      "text": "Installing M.2 module into M2_1 slot\n1. Press and hold the end button of Screwless M.2 Shield Frozr heatsink.\n11\n2. Slightly lift up the end part of Screwless M.2 Shield Frozr heatsink and move it\nforward to uninstall the heatsink.\n22\n3. If you install 2260 SSD, use the included EZ M.2 Clip II Remover. Place the\nincluded EZ M.2 Clip II in the slot, use the remover to screw it in by turning\nclockwise, and secure it. Skip this step if you install 2280 SSD.\nEZ M.2 Clip II Remover\n33\nEZ M.2 Clip II\n2260 SSD\n34",
+      "tables": []
+    },
+    {
+      "page": 35,
+      "text": "4. Insert your M.2 SSD into the M.2 slot at a 30-degree angle.\n5. Rotate the EZ M.2 Clip to secure the M.2 SSD, or use the EZ M.2 Clip II, which\nautomatically locks and secures the SSD.\n44 44\n55\n3300\u00ba\u00ba 3300\u00ba\u00ba 2260 SSD\n2280 SSD\n55\n6. Remove the protective films from the thermal pads under Screwless M.2 Shield\nFrozr heatsink.\n7. Align the notches under Screwless M.2 Shield Frozr heatsink with the tenons, and\nthen put the heatsink back in place.\n8. Press the end side of Screwless M.2 Shield Frozr heatsink to lock it completely.\n66\n77\n88\n35",
+      "tables": []
+    },
+    {
+      "page": 36,
+      "text": "Installing M.2 module into M2_2 slot\n1. Loosen the screws of M.2 Shield Frozr heatsink.\n2. Lift the M.2 Shield Frozr heatsink up and remove it.\n22 11\n11\n3. If you install 2260 SSD, use the included EZ M.2 Clip II Remover. Place the\nincluded EZ M.2 Clip II in the slot, use the remover to screw it in by turning it\nclockwise, and secure it. Skip this step if you install 2280 SSD.\nEZ M.2 Clip II Remover\n33\nEZ M.2 Clip II\n2260 SSD\n36",
+      "tables": []
+    },
+    {
+      "page": 37,
+      "text": "4. Insert your M.2 SSD into the M.2 slot at a 30-degree angle.\n5. Rotate the EZ M.2 Clip to secure the M.2 SSD, or use the EZ M.2 Clip II, which\nautomatically locks and secures the SSD.\n55 44 44\n3300\u00ba\u00ba 3300\u00ba\u00ba\n2260 SSD\n2280 SSD\n55\n6. Remove the protective films from the thermal pads under the M.2 Shield Frozr\nheatsink.\n7. Put the M.2 Shield Frozr heatsink back in place and secure it.\n77\n66\n77\n37",
+      "tables": []
+    },
+    {
+      "page": 38,
+      "text": "Installing M.2 module into M2_3 slot\n1. Loosen the screws of M.2 Shield Frozr heatsink.\n2. Lift up the M.2 Shield Frozr heatsink and remove it\n11\n22\n11\n3. If you install 2280 SSD, use the included EZ M.2 Clip II Remover. Place the\nincluded EZ M.2 Clip II in the slot, use the remover to screw it in by turning it\nclockwise, and secure it. Skip this step if you install 22110 SSD.\nEZ M.2 Clip II Remover\n33\nEZ M.2 Clip II\n2280 SSD\n38",
+      "tables": []
+    },
+    {
+      "page": 39,
+      "text": "4. Insert your M.2 SSD into the M.2 slot at a 30-degree angle.\n5. Rotate the EZ M.2 Clip to secure the M.2 SSD, or use the EZ M.2 Clip II, which\nautomatically locks and secures the SSD.\n44 44\n55 3300\u00ba\u00ba 3300\u00ba\u00ba\n55\n6. Remove the protective film from the thermal pad under the M.2 Shield Frozr\nheatsink.\n7. Put the M.2 Shield Frozr heatsink back in place and secure it.\n77\n66\n77\nRemoving M.2 SSD using the EZ M.2 Clip II\nTo remove M.2 SSD from the EZ M.2 Clip II, gently push the spring head on the top of\nthe EZ M.2 Clip II outward while simultaneously pulling the M.2 SSD out.\nM.2 SSD\nEZ M.2 Clip II\n39",
+      "tables": []
+    },
+    {
+      "page": 40,
+      "text": "SATA_P1~P4: SATA 6Gb/s Connectors\nThese connectors are SATA 6Gb/s interface ports. Each connector can connect to one\nSATA device.\nSATA_P2\nSATA_P1\nSATA_P4\nSATA_P3\n\u26a0Important\n\u25cf Please do not fold the SATA cable at a 90-degree angle. Data loss may result during\ntransmission otherwise.\n\u25cf SATA cables have identical plugs on either sides of the cable. However, it is\nrecommended that the flat connector be connected to the motherboard for space\nsaving purposes.\nJAUD1: Front Audio Connector\nThis connector allows you to connect audio jacks on the front panel.\n2 10\n1 9\nPin Signal Name Pin Signal Name\n1 MIC L 2 Ground\n3 MIC R 4 NC\n5 Head Phone R 6 MIC Detection\n7 SENSE_SEND 8 No Pin\n9 Head Phone L 10 Head Phone Detection\n40",
+      "tables": [
+        [
+          [
+            "Pin 1",
+            "Signal Name MIC L",
+            "Pin Signal Name 2 Ground"
+          ],
+          [
+            "3",
+            "MIC R",
+            "4 NC"
+          ],
+          [
+            "5 7",
+            "Head Phone R SENSE_SEND",
+            "6 MIC Detection 8 No Pin"
+          ],
+          [
+            "9",
+            "Head Phone L",
+            "10 Head Phone Detection"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 41,
+      "text": "JFP1, JFP2: Front Panel Connectors\nThe JFP1 connector controls the power on, power reset, and the LEDs on your PC case/\nchassis. Power Switch/ Reset Switch headers allow you to connect power button/ reset\nbutton. Power LED header connects to LED light on the PC case, and HDD LED header\nindicates the activity of the hard disk. The JFP2 connector is for Buzzer and Speaker.\nFor connecting the cables from your PC case to the correct pins on the motherboard,\nplease refer to the following images.\nPower LED Power Switch\n2 10\nJFP1 1 9\nReserved\nHDD LED Reset Switch\nBuzzer\nJFP2 1\nSpeaker\n\u26a0Important\nMake sure to connect the Power LED and HDD LED cables to the corresponding positive\nand negative pins on the motherboard. Otherwise, the LEDs will not function properly.\nJDASH1 : Tuning Controller connector\nThis connector is used to connect an optional Tuning Controller module.\n2 6\n1 5\nPin Signal Name Pin Signal Name\n1 No Pin 2 NC\n3 MCU_SMB_SCL_M 4 MCU_SMB_SDA_M\n5 VCC5 6 Ground\n41",
+      "tables": [
+        [
+          [
+            "1 3",
+            "No Pin MCU_SMB_SCL_M",
+            "2 4",
+            "NC MCU_SMB_SDA_M"
+          ],
+          [
+            "5",
+            "VCC5",
+            "6",
+            "Ground"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 42,
+      "text": "CPU_PWR1~2, ATX_PWR1, PCIE_PWR1: Power Connectors\nThese power connectors allow you to connect an ATX power supply.\nCPU_PWR1~2\nPin Signal Name Pin Signal Name\n1 Ground 2 Ground\n3 Ground 4 Ground\n5 +12V 6 +12V\n7 +12V 8 +12V\nATX_PWR1\nPin Signal Name Pin Signal Name\n8 5\nCPU_PWR1~2\n4 1\n1 +3.3V 2 +3.3V\n3 Ground 4 +5V\n5 Ground 6 +5V\n12 24 7 Ground 8 PWR OK\n9 5VSB 10 +12V\nATX_PWR1\n11 +12V 12 +3.3V\n13 +3.3V 14 -12V\n1 13 15 Ground 16 PS-ON#\n17 Ground 18 Ground\n19 Ground 20 Res\n21 +5V 22 +5V\n23 +5V 24 Ground\nPCIE_PWR1\nPin Signal Name Pin Signal Name\nPCIE_PWR1 8 5 1 +12V 2 +12V\n4 1\n3 +12V 4 SENS1\n5 Ground 6 SENS0\n7 Ground 8 Ground\n\u26a0Important\nMake sure that all the power cables are securely connected to a proper ATX power\nsupply to ensure stable operation of the motherboard.\n42",
+      "tables": [
+        [
+          [
+            "Pin 1",
+            "Signal Name Ground",
+            "Pin 2",
+            "Signal Name Ground"
+          ],
+          [
+            "3 5",
+            "Ground +12V",
+            "4 6",
+            "Ground +12V"
+          ]
+        ],
+        [
+          [
+            "Pin",
+            "Signal Name",
+            "Pin",
+            "Signal Name"
+          ],
+          [
+            "1",
+            "+3.3V",
+            "2",
+            "+3.3V"
+          ],
+          [
+            "3",
+            "Ground",
+            "4",
+            "+5V"
+          ],
+          [
+            "5",
+            "Ground",
+            "6",
+            "+5V"
+          ],
+          [
+            "7",
+            "Ground",
+            "8",
+            "PWR OK"
+          ],
+          [
+            "9",
+            "5VSB",
+            "10",
+            "+12V"
+          ],
+          [
+            "11",
+            "+12V",
+            "12",
+            "+3.3V"
+          ],
+          [
+            "13",
+            "+3.3V",
+            "14",
+            "-12V"
+          ],
+          [
+            "15",
+            "Ground",
+            "16",
+            "PS-ON#"
+          ],
+          [
+            "17",
+            "Ground",
+            "18",
+            "Ground"
+          ],
+          [
+            "19",
+            "Ground",
+            "20",
+            "Res"
+          ],
+          [
+            "21",
+            "+5V",
+            "22",
+            "+5V"
+          ],
+          [
+            "23",
+            "+5V",
+            "24",
+            "Ground"
+          ]
+        ],
+        [
+          [
+            "Pin",
+            "Signal Name",
+            "Pin",
+            "Signal Name"
+          ],
+          [
+            "1",
+            "+12V",
+            "2",
+            "+12V"
+          ],
+          [
+            "3",
+            "+12V",
+            "4",
+            "SENS1"
+          ],
+          [
+            "5",
+            "Ground",
+            "6",
+            "SENS0"
+          ],
+          [
+            "7",
+            "Ground",
+            "8",
+            "Ground"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 43,
+      "text": "JCI1: Chassis Intrusion Connector\nThis connector allows you to connect the chassis intrusion switch cable.\nNormal Trigger the chassis\n(default) intrusion event\nUsing chassis intrusion detector\n1. Connect the JCI1 connector to the chassis intrusion switch/ sensor on the chassis.\n2. Close the chassis cover.\n3. Go to BIOS > Security > Chassis Intrusion Configuration.\n4. Set Chassis Intrusion to Enabled.\n5. Press F10 to save and exit and then press the Enter key to select Yes.\n6. Once the chassis cover is opened again, a warning message will be displayed on\nscreen when the computer is turned on.\nResetting the chassis intrusion warning\n1. Go to BIOS > Security > Chassis Intrusion Configuration.\n2. Set Chassis Intrusion to Reset.\n3. Press F10 to save and exit and then press the Enter key to select Yes.\nJOC_FS1: Safe Boot Jumper\nThis jumper is used for Safe Boot. When this jumper is enabled, the system will boot\nwith default settings and lower PCIe (from CPU) mode.\nNormal (default) Enabled\nBoot with the saved Apply the BIOS default\nBIOS settings. settings and lower PCIe\n(from CPU) mode for\nSafe Boot\n43",
+      "tables": []
+    },
+    {
+      "page": 44,
+      "text": "JUSBC1: USB 10Gbps Type-C\u00ae Front Panel Connectors\nThis USB connector allows you to connect to the USB Type-C\u00ae port on the front panel\nand supports data transfer speeds of up to 10Gbps. It features a user-friendly design\nthat ensures proper orientation when connecting the cable.\nUSB Type-C Cable\nJUSBC1\nUSB Type-C port of\nfront panel\nJUSB3~4: USB 5Gbps Connector\nThis USB connector allows you to connect to USB ports on the chassis panel and\nsupports data transfer speeds of up to 5Gbps.\nPin Signal Name Pin Signal Name\n1 Power 2 USB3_RX_DN\n3 USB3_RX_DP 4 Ground\n5 USB3_TX_C_DN 6 USB3_TX_C_DP\n7 Ground 8 USB2.0-\n9 USB2.0+ 10 Ground\n11 USB2.0+ 12 USB2.0-\n10 11 13 Ground 14 USB3_TX_C_DP\n1 10\n15 USB3_TX_C_DN 16 Ground\n17 USB3_RX_DP 18 USB3_RX_DN\n20 11\n1 20 19 Power 20 No Pin\n\u26a0Important\nNote that the Power and Ground pins must be connected correctly to avoid possible\ndamage.\n44",
+      "tables": [
+        [
+          [
+            "Pin 1 3",
+            "Signal Name Power USB3_RX_DP",
+            "Pin 2 4",
+            "Signal Name USB3_RX_DN Ground"
+          ],
+          [
+            "5 7",
+            "USB3_TX_C_DN Ground",
+            "6 8",
+            "USB3_TX_C_DP USB2.0-"
+          ],
+          [
+            "9",
+            "USB2.0+",
+            "10",
+            "Ground"
+          ],
+          [
+            "11",
+            "USB2.0+",
+            "12",
+            "USB2.0-"
+          ],
+          [
+            "13",
+            "Ground",
+            "14",
+            "USB3_TX_C_DP"
+          ],
+          [
+            "15",
+            "USB3_TX_C_DN",
+            "16",
+            "Ground"
+          ],
+          [
+            "17",
+            "USB3_RX_DP",
+            "18",
+            "USB3_RX_DN"
+          ],
+          [
+            "19",
+            "Power",
+            "20",
+            "No Pin"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 45,
+      "text": "JUSB1~2, 5: USB 2.0 Connectors\nThis USB connector allows you to connect to USB ports on the chassis panel and\nsupports data transfer speeds of up to 480Mbps.\n2 10\n1 9\nPin Signal Name Pin Signal Name\n1 VCC 2 VCC\n3 USB0- 4 USB1-\n5 USB0+ 6 USB1+\n7 Ground 8 Ground\n9 No Pin 10 NC\n\u26a0Important\n\u25cf Note that the VCC and Ground pins must be connected correctly to avoid possible\ndamage.\n\u25cf In order to recharge your iPad, iPhone and iPod through USB ports, please install MSI\nCenter utility.\nJTPM1: TPM Module Connector\nThis connector is designed for a Trusted Platform Module (TPM) to enable secure\nstorage of sensitive data and perform cryptographic operations that ensure the\nintegrity of your system.\n2 12\n1 11\nPin Signal Name Pin Signal Name\n1 SPI Power 2 SPI Chip Select\nMaster In Slave Out Master Out Slave In\n3 4\n(SPI Data) (SPI Data)\n5 Reserved 6 SPI Clock\n7 Ground 8 SPI Reset\n9 Reserved 10 No Pin\n11 Reserved 12 Interrupt Request\n\u26a0Important\nThe TPM module is not included and must be purchased separately.\n45",
+      "tables": [
+        [
+          [
+            "1 3",
+            "VCC USB0-",
+            "2 VCC 4 USB1-"
+          ],
+          [
+            "5",
+            "USB0+",
+            "6 USB1+"
+          ],
+          [
+            "7",
+            "Ground",
+            "8 Ground"
+          ],
+          [
+            "9",
+            "No Pin",
+            "10 NC"
+          ]
+        ],
+        [
+          [
+            "1 3",
+            "SPI Power Master In Slave Out (SPI Data)",
+            "2 SPI Chip Select Master Out Slave In 4 (SPI Data)"
+          ],
+          [
+            "5",
+            "Reserved",
+            "6 SPI Clock"
+          ],
+          [
+            "7",
+            "Ground",
+            "8 SPI Reset"
+          ],
+          [
+            "9",
+            "Reserved",
+            "10 No Pin"
+          ],
+          [
+            "11",
+            "Reserved",
+            "12 Interrupt Request"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 46,
+      "text": "CPU_FAN1, PUMP_SYS1, SYS_FAN1~6: Fan Connectors\nFan connectors can be divided into two categories: PWM Mode and DC Mode. PWM\nMode fan connectors provide a constant 12V output and adjust fan speed with a\nspeed control signal. DC Mode fan connectors control fan speed by changing voltage.\nPlease refer to the following specification table for the fan connector mode of your\nmotherboard.\nYou can control fans in BIOS> HARDWARE MONITOR panel. Enabling Smart Fan Mode\nwill regulate fan speed based on CPU or system temperature. Disabling Smart Fan\nMode will set the fan to full speed.\n\u26a0Important\nYou can set DC or PWM in HARDWARE MONITOR panel to your fan type if your\nmotherboard supports it. Make sure fans are working properly after switching the\nPWM/ DC mode.\nCPU_FAN1 PUMP_SYS1\n1\nSYS_FAN1 1\nSYS_FAN6\nPWM Mode pin definition\nSYS_FAN5\nPin Signal Name Pin Signal Name\n1 Ground 2 +12V\n3 Sense 4 Speed Control Signal\nDC Mode pin definition\nSYS_FAN4\nPin Signal Name Pin Signal Name\nSYS_FAN2 SYS_FAN3 1 Ground 2 Voltage Control\n3 Sense 4 NC\nFan specifications for fan connectors\nConnector Fan mode Max. current Max. power\nCPU_FAN1 Auto mode 2A 24W\nPUMP_SYS1 PWM mode 3A 36W\nSYS_FAN1~6 Auto mode 1A 12W\n\u26a0Important\nThe auto mode fan connectors can automatically detect PWM and DC modes.\n46",
+      "tables": [
+        [
+          [
+            "Pin",
+            "Signal Name",
+            "Pin",
+            "Signal Name"
+          ],
+          [
+            "1",
+            "Ground",
+            "2",
+            "Voltage Control"
+          ],
+          [
+            "3",
+            "Sense",
+            "4",
+            "NC"
+          ]
+        ],
+        [
+          [
+            "Connector",
+            "Fan mode",
+            "Max. current",
+            "Max. power"
+          ],
+          [
+            "CPU_FAN1",
+            "Auto mode",
+            "2A",
+            "24W"
+          ],
+          [
+            "PUMP_SYS1",
+            "PWM mode",
+            "3A",
+            "36W"
+          ],
+          [
+            "SYS_FAN1~6",
+            "Auto mode",
+            "1A",
+            "12W"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 47,
+      "text": "JBAT1: Clear CMOS (Reset BIOS) Jumper\nThere is CMOS memory onboard that is external powered from a battery located on\nthe motherboard to save system configuration data. If you want to clear the system\nconfiguration, set the jumpers to clear the CMOS memory.\nKeep Data Clear CMOS/\n(default) Reset BIOS\nResetting BIOS to default values\n1. Power off the computer and unplug the power cord.\n2. Use a jumper cap to short JBAT1 for about 5-10 seconds.\n3. Remove the jumper cap from JBAT1.\n4. Plug the power cord and Power on the computer.\n47",
+      "tables": []
+    },
+    {
+      "page": 48,
+      "text": "JRGB1: RGB LED connector\nThe JRGB connector allows you to connect the 5050 RGB LED strips 12V.\n1\n\u26a0Important\n\u25cf The JRGB connector supports up to 2 meters continuous 5050 RGB LED strips\n(12V/G/R/B) with the maximum power rating of 3A (12V).\n\u25cf Always turn off the power supply and unplug the power cord from the power outlet\nbefore installing or removing the RGB LED strip.\n\u25cf Please use MSI\u2019s software to control the extended LED strip.\n48\nGRB\nRGB LED Strip Connection\nJRGB extension cable\nJRGB connector 5050 RGB LED strips 12V\n1\n1\nGRB\n1\nPin Signal Name Pin Signal Name\n1 +12V 2 G\n3 R 4 B\nRGB LED Fan Connection\nJRGB connector\nSystem fan connector\nRGB LED fan",
+      "tables": [
+        [
+          [
+            "Pin 1",
+            "Signal Name +12V",
+            "Pin 2",
+            "Signal Name G"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 49,
+      "text": "JARGB_V2_1~3: A-RAINBOW V2 (ARGB Gen2) LED connectors\nThe JARGB_V2 connectors allow you to connect the ARGB Gen2 and the ARGB-based\nLED strips. The JARGB_V2 connector supports up to 180 individually addressable RGB\nLEDs with maximum power rating of 3A (5V).\n1\n1\nPin Signal Name Pin Signal Name\n1 +5V 2 Data\n3 No Pin 4 Ground\n1\n49\nD\n+5V\nAddressable RGB LED Strip Connection\nJARGB_V2 extension cable\nJARGB_V2 connector ARGB/ ARGB Gen2 LED strip",
+      "tables": [
+        [
+          [
+            "Pin 1",
+            "Signal Name +5V",
+            "Pin 2",
+            "Signal Name Data"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 50,
+      "text": "Addressable RGB LED Fan Connection\nJARGB_V2 connector\n1\n1\nSystem Fan connector\nARGB/ ARGB Gen2 LED Fan\n\u26a0CAUTION\nDo not connect the wrong type of LED strips. The JRGB connector and the JARGB_V2\nconnector provide different voltages, and connecting the ARGB 5V LED strip to the\nJRGB connector will result in damage to the LED strip.\n\u26a0Important\n\u25cf If you connect the ARGB Gen1 and ARGB Gen2 LED strips into the same connector, it\nmay cause some issues. Please do not mix the ARGB Gen1 LED and the ARGB Gen2\nLED strips together.\n\u25cf It is recommended that you install LED strips with the same specification to achieve\nthe best effects.\n\u25cf Always turn off the power supply and unplug the power cord from the power outlet\nbefore installing or removing the addressable RGB LED strip.\n\u25cf Please use MSI\u2019s software to control the extended LED strip.\n50",
+      "tables": []
+    },
+    {
+      "page": 51,
+      "text": "JAF_1: EZ Conn-Header V1\nThis header is designed to connect MPG EZ120 ARGB fans, simplifying cable routing. It\nalso allows you to connect the ARGB Gen1 and Gen2 LED strips and system fans.\n2 8\n1 7\nPin Signal Name Pin Signal Name\n1 Ground 2 5V\n3 12V 4 DATA\n5 Sense 6 Ground\n7 Speed Control Signal 8 No Pin\nMPG EZ120 ARGB Fan Connection\n1\nFan-JAF1 Cable MPG EZ120 ARGB\nJAF_1 header\n51",
+      "tables": [
+        [
+          [
+            "1 3",
+            "Ground 12V",
+            "2 4",
+            "5V DATA"
+          ],
+          [
+            "5",
+            "Sense",
+            "6",
+            "Ground"
+          ],
+          [
+            "7",
+            "Speed Control Signal",
+            "8",
+            "No Pin"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 52,
+      "text": "1\n\u26a0Important\n\u25cf The Fan-JAF1 Cable is included in the packaging of MPG EZ120 ARGB.\n\u25cf For more information on how to install MPG EZ120 ARGB, please refer to\nhttps://msi.gm/S5035E56.\n52\nU\nD\nG\nAddressable RGB LED Fan Connection\n1 to 2 EZ Conn-Cable (V1) ARGB/ ARGB Gen2 LED Fan\nJAF_1 header",
+      "tables": []
+    },
+    {
+      "page": 53,
+      "text": "Onboard LEDs\nEZ Debug LED\nThese LEDs indicate the debug status of the motherboard.\nLED Color Status\nRed CPU is not detected or fail\nYellow DRAM is not detected or fail\nWhite GPU is not detected or fail\nGreen Booting device is not detected or fail\n53",
+      "tables": [
+        [
+          [
+            "Red Yellow White",
+            "CPU is not detected or fail DRAM is not detected or fail GPU is not detected or fail"
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 54,
+      "text": "Installing OS, Drivers & MSI Center\nPlease download and update the latest utilities and drivers at www.msi.com\nInstalling Windows 11\n1. Power on the computer.\n2. Insert the Windows 11 installation disc/ USB into your computer.\n3. Press the Restart button on the computer case.\n4. Press F11 key during the computer POST (Power-On Self Test) to get into Boot\nMenu.\n5. Select the Windows 11 installation disc/USB from the Boot Menu.\n6. Press any key if screen shows Press any key to boot from CD or DVD... message. If\nnot, please skip this step.\n7. Follow the instructions on the screen to install Windows 11.\n54",
+      "tables": []
+    },
+    {
+      "page": 55,
+      "text": "Installing Drivers with MSI Driver Utility Installer\n\u26a0Important\n\u25cf Some new network chips have not been natively supported by Windo\u2014ws 11. It is\nrecommended that the LAN driver be installed before installing drivers with MSI\nDriver Utility Installer. Please refer to www.msi.com to install the LAN driver for your\nmotherboard.\n\u25cf The MSI Driver Utility Installer will only pop up once. If you cancel or close it during\nthe process, please refer to the Live Update chapter of the MSI Center manual to\ninstall the drivers. You can also go to www.msi.com to search your motherboard and\ndownload the drivers.\n\u25cf MSI Driver Utility Installer needs to be installed over the internet.\n1. Start up your computer in Windows 11.\n2. Select Start > Settings > Windows Update, and then select Check for updates.\n3. MSI Driver Utility Installer will pop up automatically.\n4. Select the I have read and agree to the MSI Terms of Use check box, and then\nclick Next.\n55",
+      "tables": []
+    },
+    {
+      "page": 56,
+      "text": "5. Check the Select All checkbox in the lower-left corner and click Install to install\nMSI Center and drivers. The installation progress will be shown at the bottom.\n6. Once the progress has completed, click Finish.\n56",
+      "tables": []
+    },
+    {
+      "page": 57,
+      "text": "MSI Center\nMSI Center is an application that helps you easily optimize game settings and smoothly\nuse content creation softwares. It also allows you to control and synchronize LED\nlight effects on PCs and other MSI products. With MSI Center, you can customize ideal\nmodes, monitor system performance, and adjust fan speed.\nMSI Center User Guide\nIf you would like to know more information about MSI Center, please refer to\nhttps://msi.gm/S391169E\nor scan the QR code to access.\n\u26a0Important\nFunctions may vary depending on the product you have.\n57",
+      "tables": []
+    },
+    {
+      "page": 58,
+      "text": "UEFI BIOS\nMSI UEFI BIOS is compatible with UEFI (Unified Extensible Firmware Interface)\narchitecture. UEFI has many new functions and advantages that traditional BIOS\ncannot achieve, and it will completely replace BIOS in the future. The MSI UEFI BIOS\nuses UEFI as the default boot mode to take full advantage of the new chipset\u2019s\ncapabilities. However, it still has a CSM (Compatibility Support Module) mode to be\ncompatible with older devices. That allows you to replace legacy devices with UEFI\ncompatible devices during the transition.\n\u26a0Important\nThe term BIOS in this user guide refers to UEFI unless otherwise noted.\nUEFI advantages\n\u25cf Fast booting - UEFI can directly boot the operating system and save the BIOS self-test\nprocess. And also eliminates the time to switch to CSM mode during POST.\n\u25cf Supports for hard drive partitions larger than 2 TB.\n\u25cf Supports more than 4 primary partitions with a GUID Partition Table (GPT).\n\u25cf Supports unlimited number of partitions.\n\u25cf Supports full capabilities of new devices - new devices may not provide backward\ncompatibility.\n\u25cf Supports secure startup - UEFI can check the validity of the operating system to\nensure that no malware tampers with the startup process.\nIncompatible UEFI cases\n\u25cf 32-bit Windows operating system - this motherboard supports only Windows 11\n64-bit operating system.\n\u25cf Older graphics card - the system will detect your graphics card. If you use older\ngraphics cards, it may display a warning message There is no GOP (Graphics\nOutput protocol) support detected in this graphics card.\n\u26a0Important\nWe recommend that you replace it with a graphics card supporting GOP/UEFI or use\nCPU with integrated graphics for having normal function.\n58",
+      "tables": []
+    },
+    {
+      "page": 59,
+      "text": "BIOS Setup\nThe default settings offer the optimal performance for system stability in normal\nconditions. You should always keep the default settings to avoid possible system\ndamage or failure booting unless you are familiar with BIOS.\n\u26a0Important\n\u25cf BIOS items are continuously updated for better system performance. Therefore, the\ndescription may be slightly different from the latest BIOS and should be for reference\nonly. You could also refer to the HELP information panel in BIOS.\n\u25cf The BIOS screens, options and settings will vary depending on the products you\nhave.\nBIOS User Guide\nIf you\u2019d like to know more instructions on setting up the BIOS, please refer\nto https://msi.gm/S53FE767\nor scan the QR code to access.\n\u26a0Important\nThe appearance of the BIOS user guide may differ based on your motherboard model.\nPlease consult your motherboard\u2019s BIOS for specific settings and options.\n59",
+      "tables": []
+    },
+    {
+      "page": 60,
+      "text": "Entering BIOS Setup\nPress Delete key, when the Press DEL key to enter Setup Menu, F11 to enter Boot\nMenu message appears on the screen during the boot process.\nFunction key\n+/ -: Increase / decrease the value\nEnter: Select the item\nESC: Exit\nTab: Next selection\nCtrl+F: Enter Search menu\nF1: General Help list\nF2: Add/ Remove a favorite item\nF3: Enter Favorites menu\nF4: Enter CPU core center & memory center information menu\nF5: Enter Hardware Monitor menu\nF6: Load optimized defaults\nF7: Switch between Advanced mode and EZ mode\nF8: Load Overclocking Profile\nF9: Save Overclocking Profile\nF10: Save Change and Reset*\nF12: Take a screenshot and save it to USB flash drive (FAT/ FAT32 format only).\n* Pressing F10 displays a confirmation message summarizing your changes. Select Yes\nor No to confirm.\nHow to find the BIOS version?\nAfter entering the BIOS, find the BIOS version in the information box.\nInformation\nMotherBoard\nModel Number\nBIOS Ver\nEModelAMSI.Ver\nMotherBoard Temperature\nTemp oC\nBIOS Build Date\nDate\n60",
+      "tables": [
+        [
+          [
+            "",
+            "Information MotherBoard",
+            ""
+          ],
+          [
+            "",
+            "Model Number BIOS Ver",
+            ""
+          ],
+          [
+            "",
+            "EModelAMSI.Ver MotherBoard Temperature Temp oC BIOS Build Date Date",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 61,
+      "text": "Resetting BIOS\nYou might need to restore the default BIOS setting to solve certain problems. You can\nuse the following methods to reset the BIOS settings.\n\u25cf Go to BIOS and press F6 to load optimized defaults.\n\u25cf Short the Clear CMOS jumper on the motherboard.\n\u25cf Press the Clear CMOS button on the rear I/O panel. If your motherboard doesn\u2019t\nhave this button, skip this step.\n\u26a0Important\nBe sure the computer is off before clearing CMOS data. Please refer to the Clear CMOS\njumper/ button section for resetting BIOS.\nUpdating BIOS\nUpdating BIOS with M-FLASH\nBefore starting the M-Flash process, make sure you have:\n\u25cf A USB flash drive with a capacity of 32GB or less that is formatted to FAT32.\n\u26a0Important\nM-Flash only supports FAT32 format, and the USB flash drive should not exceed 32GB.\n\u25cf A computer with internet access.\nPlease follow the steps below to update BIOS:\n1. Download the latest BIOS file from the MSI website that matches your\nmotherboard model, and save it to the USB flash drive.\n2. If your motherboard has a Multi-BIOS switch, switch to the target BIOS ROM.\n3. Insert the USB flash drive into your motherboard\u2019s USB port.\n4. Enter flash mode by either:\n\u25cf Rebooting and pressing Ctrl + F5 during POST, then clicking Yes to reboot the\nsystem.\n\u25cf Rebooting and pressing Del during POST to enter BIOS, then clicking the M-FLASH\nbutton and clicking Yes to reboot.\n5. Select a BIOS file from the M-FLASH File menu and press Enter.\n6. When prompted by a File Check message, click Yes to start the BIOS update.\nOnce the update reaches 100%, the system will reboot automatically.\n61",
+      "tables": []
+    },
+    {
+      "page": 62,
+      "text": "Updating BIOS with MSI Center\nBefore updating:\n\u25cf Ensure the LAN driver is installed, and the internet connection is working properly.\n\u25cf Close all other applications before updating the BIOS.\nTo update BIOS:\n1. Install and launch MSI Center, then go to Support page.\n2. Select Live Update and click on Advance button.\n3. Select the BIOS file and click on Install button.\n4. The installation reminder will appear, then click the Install button.\nThe system will automatically restart to update the BIOS. Once the flashing process is\ncomplete, the system will restart.\nUpdating BIOS with Flash BIOS Button\n1. Download the latest BIOS file from the MSI website that matches your\nmotherboard model.\n2. Rename the BIOS file to MSI.ROM, and save it to the root directory of a USB flash\ndevice.\n3. Connect the power supply to CPU_PWR1 and ATX_PWR1. (You don\u2019t need to\ninstall the CPU and memory.)\n4. Plug the USB flash device with the MSI.ROM file into the Flash BIOS Port on the\nrear I/O panel.\n5. Press the Flash BIOS Button to start flashing the BIOS. The LED will start flashing\nto indicate the process has begun.\nThe LED will turn off when the process is complete.\n62",
+      "tables": []
+    },
+    {
+      "page": 63,
+      "text": "Block Diagram\nX870E GAMING PLUS WIFI\nDDR5\nDIMM A1/A2\nPCIe 5.0x16 PCI_E1 CPU DIMM B1/B2\nUSB 40Gbps GEN5 x4 M.2_1\n(Rear Type-C) (PCIe Only)\nASM4242\nHDMITM 2.1\nUSB 10Gbps (4K@60Hz)\n(Rear Type-A)\nUSB 5Gbps HD Audio\n(Rear Type-A) ALC897\nGEN4 x4 M.2_2 USB2.0\n(PCIe Only) (Rear Type-A)\nUSB 20Gbps\nCHIPSET A\nSATA_P1_P2 (Rear Type-C)\nSATA_P3_P4\nUSB 5Gbps\n(Rear Type-A)\nUSB2.0\n(Front Type-A)\nGEN4 x4 M.2_3\nPCIe 4.0x4 PCI_E3\n(PCIe Only)\nPCIe 3.0x1 PCI_E4 USB2.0\nCHIPSETB\n(Front Type-A)\nPCIE_2 x1\nUSB 5Gbps\n(Front Type-A)\nWi-Fi 7\nRealtek 8126\n5Gbps LAN\nUSB 10Gbps\n(Front Type-C)\n63",
+      "tables": []
+    },
+    {
+      "page": 64,
+      "text": "Regulatory Notices\nFCC-B Radio Frequency Interference Statement\nThis equipment has been tested and found to comply with the limits for\na Class B digital device, pursuant to part 15 of the FCC rules. These limits\nare designed to provide reasonable protection against harmful\ninterference in a residential installation. This equipment generates, uses\nand radiates radio frequency energy, and, if not installed and used in\naccordance with the instructions, may cause harmful interference to radio\ncommunications. However, there is no guarantee that interference will not occur in a\nparticular installation. If this equipment does cause harmful interference to radio or\ntelevision reception, which can be determined by turning the equipment off and on,\nthe user is encouraged to try to correct the interference by one or more of the following\nmeasures:\n\u25cf Reorient or relocate the receiving antenna.\n\u25cf Increase the separation between the equipment and receiver.\n\u25cf Connect the equipment into an outlet on a circuit different from that to which the\nreceiver is connected.\nNOTE\n\u25cf The changes or modifications not expressly approved by the party responsible for\ncompliance could void the user\u2019s authority to operate the equipment.\n\u25cf Shield interface cables and AC power cord, if any, must be used in order to comply\nwith the emission limits.\nFCC Conditions\nThis device complies with part 15 of the FCC Rules. Operation is subject to the\nfollowing two conditions:\n\u25cf This device may not cause harmful interference.\n\u25cf This device must accept any interference received, including interference that may\ncause undesired operation.\nMSI Computer Corp.\n901 Canada Court, City of Industry, CA 91748, USA\n(626)913-0828\nwww.msi.com\ni",
+      "tables": []
+    },
+    {
+      "page": 65,
+      "text": "CE Conformity\nProducts bearing the CE marking comply with one or more of the\nfollowing EU Directives as may be applicable:\n\u25cf RED 2014/53/EU\n\u25cf Low Voltage Directive 2014/35/EU\n\u25cf EMC Directive 2014/30/EU\n\u25cf RoHS Directive 2011/65/EU\n\u25cf Implementing measure Directive 2009/125/EC of ESPR Regulation (EU) 2024/1781\nCompliance with these directives is assessed using applicable European Harmonized\nStandards.\nThe point of contact for regulatory matters is MSI-Europe: Eindhoven 5706 5692 ER\nSon, the Netherlands.\nFor any support regarding the EU General Product Safety Regulation (GPSR), please\ncontact MSI Computer Europe \u0412.V. via gpsr@msi.com Science Park Eindhoven 5706\n5692 ER Son, the Netherlands\nProducts with Radio Functionality (EMF)\nThis product incorporates a radio transmitting and receiving device. For computers\nin normal use, a separation distance of 20 cm ensures that radio frequency exposure\nlevels comply with EU requirements. Products designed to be operated at closer\nproximities, such as tablet computers, comply with applicable EU requirements\nin typical operating positions. Products can be operated without maintaining a\nseparation distance unless otherwise indicated in instructions specific to the product.\nRestrictions for Products with Radio Functionality\nWLAN 5150-5350 MHz:\nThe WiFi operating in the band 5150-5350 MHz shall be restricted to indoor\nuse in the European Union.\nWLAN 6E:\na. Low Power Indoor (LPI) Wi-Fi 5.945-6.425 GHz devices:\nThe device is restricted to indoor use only when operating in the 5945 to\n6425 MHz frequency range in the European Union.\nb. Very Low Power (VLP) Wi-Fi 5.945-6.425 GHz devices (portable devices):\nThe device is not permitted to be used on Unmanned Aircraft Systems\n(UAS) when operating in the 5945 to 6425 MHz frequency range in the\nEuropean Union.\nii",
+      "tables": []
+    },
+    {
+      "page": 66,
+      "text": "Wireless Radio Use\nThis device is restricted to indoor use when operating in the 2.4GHz, 5GHz, 6GHz\nfrequency band.\nCet appareil doit \u00eatre utilis\u00e9 \u00e0 l\u2019int\u00e9rieur.\n\ub2f9\ud574 \ubb34\uc120\uc124\ube44\ub294 \uc6b4\uc6a9\uc911 \uc804\ud30c\ud63c\uc2e0 \uac00\ub2a5\uc131\uc774 \uc788\uc74c.\n\u3053\u306e\u88fd\u54c1\u306f\u3001\u5468\u6ce2\u6570\u5e2f\u57df 2.4GHz, 5GHz, 6GHz \u3067\u52d5\u4f5c\u3057\u3066\u3044\u308b\u3068\u304d\u306f\u3001\u5c4b\u5185\u306b\u304a\u3044\u3066\u306e\u307f\u4f7f\u7528\n\u53ef\u80fd\u3067\u3059\u3002\nNCC\u7121\u7dda\u8a2d\u5099\u8b66\u544a\u8072\u660e\n\u5de5\u4f5c\u983b\u73872.4GHz, 5GHz, 6GHz\u8a72\u983b\u6bb5\u9650\u65bc\u5ba4\u5167\u4f7f\u7528\u3002\n\u7d93\u578b\u5f0f\u8a8d\u8b49\u5408\u683c\u4e4b\u4f4e\u529f\u7387\u5c04\u983b\u96fb\u6a5f\uff0c\u975e\u7d93\u8a31\u53ef\uff0c\u516c\u53f8\u3001\u5546\u865f\u6216\u4f7f\u7528\u8005\u5747\u4e0d\u5f97\u64c5\u81ea\u8b8a\u66f4\u983b\u7387\u3001\u52a0\u5927\n\u529f\u7387\u6216\u8b8a\u66f4\u539f\u8a2d\u8a08\u4e4b\u7279\u6027\u53ca\u529f\u80fd\u3002\n\u4f4e\u529f\u7387\u5c04\u983b\u96fb\u6a5f\u4e4b\u4f7f\u7528\u4e0d\u5f97\u5f71\u97ff\u98db\u822a\u5b89\u5168\u53ca\u5e72\u64fe\u5408\u6cd5\u901a\u4fe1\uff1b\u7d93\u767c\u73fe\u6709\u5e72\u64fe\u73fe\u8c61\u6642\uff0c\u61c9\u7acb\u5373\u505c\n\u7528\uff0c\u4e26\u6539\u5584\u81f3\u7121\u5e72\u64fe\u6642\u65b9\u5f97\u7e7c\u7e8c\u4f7f\u7528\u3002\u524d\u9805\u5408\u6cd5\u901a\u4fe1\uff0c\u6307\u4f9d\u96fb\u4fe1\u6cd5\u898f\u5b9a\u4f5c\u696d\u4e4b\u7121\u7dda\u96fb\u901a\u4fe1\u3002\u4f4e\u529f\n\u7387\u5c04\u983b\u96fb\u6a5f\u9808\u5fcd\u53d7\u5408\u6cd5\u901a\u4fe1\u6216\u5de5\u696d\u3001\u79d1\u5b78\u53ca\u91ab\u7642\u7528\u96fb\u6ce2\u8f3b\u5c04\u6027\u96fb\u6a5f\u8a2d\u5099\u4e4b\u5e72\u64fe\u3002\nCompliance Statement of Innovation, Science and\nEconomic Development Canada (ISED)\nThis device complies with with Innovation, Science and Economic Development\nCanada\u2019s licence-exempt RSS(s). Operation is subject to the following two conditions:\n(1) this device may not cause interference, and (2) this device must accept any\ninterference, including interference that may cause undesired operation of the device.\nOperation in the band 5150-5250 MHz is only for indoor use to reduce the potential for\nharmful interference to co-channel mobile satellite systems.\nCAN ICES-003(B)/NMB-003(B)\nAustralia and New Zealand notice\nThis equipment incorporates a radio transmitting and receiving device. In normal use,\na separation distance of 20 cm ensures that radio frequency exposure levels comply\nwith the Australian and New Zealand Standards.\n\u30af\u30e9\u30b9B\u60c5\u5831\u6280\u8853\u88c5\u7f6e\n\u3053\u306e\u88c5\u7f6e\u306f\u3001\u30af\u30e9\u30b9\uff22\u60c5\u5831\u6280\u8853\u88c5\u7f6e\u3067\u3059\u3002\u3053\u306e\u88c5\u7f6e\u306f\u3001\u5bb6\u5ead\u74b0\u5883\u3067\u4f7f\u7528\u3059\u308b\u3053\u3068\u3092\u76ee\u7684\u3068\u3057\u3066\u3044\n\u307e\u3059\u304c\u3001\u3053\u306e\u88c5\u7f6e\u304c\u30e9\u30b8\u30aa\u3084\u30c6\u30ec\u30d3\u30b8\u30e7\u30f3\u53d7\u4fe1\u6a5f\u306b\u8fd1\u63a5\u3057\u3066\u4f7f\u7528\u3055\u308c\u308b\u3068\u3001\u53d7\u4fe1\u969c\u5bb3\u3092\u5f15\u304d\u8d77\u3053\n\u3059\u3053\u3068\u304c\u3042\u308a\u307e\u3059\u3002\u53d6\u6271\u8aac\u660e\u66f8\u306b\u5f93\u3063\u3066\u6b63\u3057\u3044\u53d6\u308a\u6271\u3044\u3092\u3057\u3066\u4e0b\u3055\u3044\u3002\nVCCI-B\nKC\uc778\uc99d\uc11c\n\uc0c1\ud638: (\uc8fc)\uc5e0\uc5d0\uc2a4\uc544\uc774\ucf54\ub9ac\uc544\n\uc81c\ud488\uba85: \uba54\uc778\ubcf4\ub4dc\n\ubaa8\ub378\uba85: 10-7E70\n\uc81c\uc870\ub144\uc6d4: 2025\ub144\nR-R-MSI-10-7E70 \uc81c\uc870\uc790 \ubc0f \uc81c\uc870\uad6d\uac00: MSI/\uc911\uad6d\niii",
+      "tables": []
+    },
+    {
+      "page": 67,
+      "text": "Battery Information\nEuropean Union:\nBatteries, battery packs, and accumulators should not be disposed of as\nunsorted household waste. Please use the public collection system to return,\nrecycle, or treat them in compliance with the local regulations.\nBSMI:\n\u5ee2\u96fb\u6c60\u8acb\u56de\u6536\nFor better environmental protection, waste batteries should be collected\nseparately for recycling or special disposal.\nCalifornia, USA:\nThe button cell battery may contain perchlorate material and requires special\nhandling when recycled or disposed of in California.\nFor further information please visit:\nhttps://dtsc.ca.gov/perchlorate/\nWARNING\n\u25cf INGESTION HAZARD: This product contains a button cell or coin battery.\n\u25cf DEATH or serious injury can occur if ingested.\n\u25cf A swallowed button cell or coin battery can cause Internal Chemical\nBurns in as little as 2 hours.\n\u25cf KEEP new and used batteries OUT OF REACH OF CHILDREN\n\u25cf Seek immediate medical attention if a battery is suspected to be\nswallowed or inserted inside any part of the body.\n\u25cf Remove and immediately recycle or dispose of used batteries according to local\nregulations and keep away from children. Do NOT dispose of batteries in household\ntrash or incinerate.\n\u25cf Even used batteries may cause severe injury or death. Call a local poison control\ncenter for treatment information.\n\u25cf Battery type: CR2032\n\u25cf Battery voltage: 3V\n\u25cf Non-rechargeable batteries are not to be recharged.\n\u25cf Do not force discharge, recharge, disassemble, heat above (manufacturer\u2019s specified\ntemperature rating) or incinerate. Doing so may result in injury due to venting,\nleakage or explosion resulting in chemical burns.\n\u25cf This product contains an irreplaceable battery.\n\u25cf This icon indicates that a swallowed button battery can cause serious injury or\ndeath. Please keep batteries out of sight or reach of children.\niv",
+      "tables": [
+        [
+          [
+            "WARNING \u25cf INGESTION HAZARD: This product contains a button cell or coin battery. \u25cf DEATH or serious injury can occur if ingested. \u25cf A swallowed button cell or coin battery can cause Internal Chemical Burns in as little as 2 hours. \u25cf KEEP new and used batteries OUT OF REACH OF CHILDREN \u25cf Seek immediate medical attention if a battery is suspected to be swallowed or inserted inside any part of the body.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 68,
+      "text": "Chemical Substances Information\nIn compliance with chemical substances regulations, such as the EU REACH Regulation\n(Regulation EC No. 1907/2006 of the European Parliament and the Council), MSI\nprovides the information of chemical substances in products at:\nhttps://csr.msi.com/global/index\nEnvironmental Policy\n\u25cf The product has been designed to enable proper reuse of parts and\nrecycling and should not be thrown away at its end of life.\n\u25cf Users should contact the local authorized point of collection for recycling\nand disposing of their end-of-life products.\n\u25cf Visit the MSI website and locate a nearby distributor for further recycling\ninformation.\n\u25cf Users may also reach us at gpcontdev@msi.com for information regarding proper\nDisposal, Take-back, Recycling, and Disassembly of MSI products.\n\u25cf Please visit <https://us.msi.com/page/recycling> for information regarding the\nrecycling of your product in the US.\nWEEE (Waste Electrical and Electronic Equipment)\nStatement\nEuropean Union: This symbol on the product indicates that this product\ncannot be discarded as municipal waste. Instead, it is your responsibility to\ndispose of your waste electrical and electronic equipment by handing it\nover to a designated collection point for recycling. For more information\nabout where you can drop off your waste equipment for recycling, please\ncontact your local city office, your household waste disposal service or the\nshop where you purchased the product.\n\u65e5\u672cJIS C 0950\u6750\u8cea\u5ba3\u8a00\n\u65e5\u672c\u5de5\u696d\u898f\u683cJIS C 0950\u306b\u3088\u308a\u30012006\u5e747\u67081\u65e5\u4ee5\u964d\u306b\u8ca9\u58f2\u3055\u308c\u308b\u7279\u5b9a\u5206\u91ce\u306e\u96fb\u6c17\u304a\u3088\u3073\u96fb\u5b50\n\u6a5f\u5668\u306b\u3064\u3044\u3066\u3001\u88fd\u9020\u8005\u306b\u3088\u308b\u542b\u6709\u7269\u8cea\u306e\u8868\u793a\u304c\u7fa9\u52d9\u4ed8\u3051\u3089\u308c\u307e\u3059\u3002\nhttps://csr.msi.com/tw/Japan-JIS-C-0950-Material-Declarations\nIndia RoHS\nThis product complies with the\u201c India E-waste (Management and Handling) Rule 2011\u201d\nand prohibits use of lead, mercury, hexavalent chromium, polybrominated biphenyls\nor polybrominated diphenyl ethers in concentrations exceeding 0.1 weight % and 0.01\nweight % for cadmium, except for the exemptions set in Schedule 2 of the Rule.\nT\u00fcrkiye EEE y\u00f6netmeli\u011fi\nT\u00fcrkiye Cumhuriyeti: EEE Y\u00f6netmeli\u011fine Uygundur\n\u0423\u043a\u0440\u0430\u0457\u043d\u0430 \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043d\u044f \u043d\u0430 \u043d\u0430\u044f\u0432\u043d\u0456\u0441\u0442\u044c \u043d\u0435\u0431\u0435\u0437\u043f\u0435\u0447\u043d\u0438\u0445\n\u0440\u0435\u0447\u043e\u0432\u0438\u043d\n\u041e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u0454 \u0432\u0438\u043c\u043e\u0433\u0430\u043c \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u043e\u0433\u043e \u0440\u0435\u0433\u043b\u0430\u043c\u0435\u043d\u0442\u0443 \u0449\u043e\u0434\u043e \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043d\u044f\nv",
+      "tables": []
+    },
+    {
+      "page": 69,
+      "text": "\u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f \u0434\u0435\u044f\u043a\u0438\u0445 \u043d\u0435\u0431\u0435\u0437\u043f\u0435\u0447\u043d\u0438\u0445 \u0440\u0435\u0447\u043e\u0432\u0438\u043d \u0432 \u0435\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u043d\u043e\u043c\u0443 \u0442\u0430 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u043c\u0443\n\u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u0456, \u0437\u0430\u0442\u0432\u0435\u0440\u0434\u0436\u0435\u043d\u043e\u0433\u043e \u043f\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043e\u044e \u041a\u0430\u0431\u0456\u043d\u0435\u0442\u0443 \u041c\u0456\u043d\u0456\u0441\u0442\u0440\u0456\u0432 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \u0432\u0456\u0434 3 \u0433\u0440\u0443\u0434\u043d\u044f\n2008 \u2116 1057.\nVi\u1ec7t Nam RoHS\nK\u1ec3 t\u1eeb ng\u00e0y 01/12/2012, t\u1ea5t c\u1ea3 c\u00e1c s\u1ea3n ph\u1ea9m do c\u00f4ng ty MSI s\u1ea3n xu\u1ea5t tu\u00e2n th\u1ee7 Th\u00f4ng t\u01b0\ns\u1ed1 30/2011/TT-BCT quy \u0111\u1ecbnh t\u1ea1m th\u1eddi v\u1ec1 gi\u1edbi h\u1ea1n h\u00e0m l\u01b0\u1ee3ng cho ph\u00e9p c\u1ee7a m\u1ed9t s\u1ed1 h\u00f3a\nch\u1ea5t \u0111\u1ed9c h\u1ea1i c\u00f3 trong c\u00e1c s\u1ea3n ph\u1ea9m \u0111i\u1ec7n, \u0111i\u1ec7n t\u1eed\u201d\nMS-7E70\u4e3b\u677f\u4ea7\u54c1\u4e2d\u6709\u5bb3\u7269\u8d28\u7684\u540d\u79f0\u53ca\u542b\u91cf\n\u6709\u5bb3\u7269\u8d28\n\u90e8\u4ef6\u540d\u79f0 \u94c5 \u6c5e \u9549 \u516d\u4ef7\u94ec \u591a\u6eb4\u8054\u82ef \u591a\u6eb4\u4e8c\u82ef\u919a\n(Pb) (Hg) (Cd) (Cr(VI)) (PBB) (PBDE)\n\u5370\u5237\u7535\u8def\u677f\u7ec4\u4ef6* \u2573 \u25cb \u25cb \u25cb \u25cb \u25cb\n\u7ebd\u6263\u7535\u6c60 \u25cb \u25cb \u25cb \u25cb \u25cb \u25cb\n\u5916\u90e8\u4fe1\u53f7\u8fde\u63a5\u5934 \u2573 \u25cb \u25cb \u25cb \u25cb \u25cb\n\u5176\u4ed6 (\u4f8b: \u7ebf\u6750\u7b49) \u2573 \u25cb \u25cb \u25cb \u25cb \u25cb\n\u672c\u8868\u683c\u4f9d\u636e SJ/T 11364 \u7684\u89c4\u5b9a\u7f16\u5236\u3002\n\u25cb: \u8868\u793a\u8be5\u6709\u5bb3\u7269\u8d28\u5728\u8be5\u90e8\u4ef6\u6240\u6709\u5747\u8d28\u6750\u6599\u4e2d\u7684\u542b\u91cf\u5747\u5728 GB/T 26572 \u89c4\u5b9a\u7684\u9650\u91cf\u8981\u6c42\u4ee5\n\u4e0b\u3002\n\u2573: \u8868\u793a\u8be5\u6709\u5bb3\u7269\u8d28\u81f3\u5c11\u5728\u8be5\u90e8\u4ef6\u7684\u67d0\u4e00\u5747\u8d28\u6750\u6599\u4e2d\u7684\u542b\u91cf\u8d85\u51fa GB/T 26572 \u89c4\u5b9a\u7684\u9650\u91cf\n\u8981\u6c42\uff0c\u4f46\u6240\u6709\u90e8\u4ef6\u90fd\u7b26\u5408\u6b27\u76dfRoHS\u8981\u6c42\u3002\n* \u5370\u5237\u7535\u8def\u677f\u7ec4\u4ef6: \u5305\u62ec\u5370\u5237\u7535\u8def\u677f\u53ca\u5176\u6784\u6210\u7684\u96f6\u90e8\u4ef6\u3002\n\u25a0 \u4e0a\u8ff0\u6709\u6bd2\u6709\u5bb3\u7269\u8d28\u6216\u5143\u7d20\u6e05\u5355\u4f1a\u4f9d\u578b\u53f7\u4e4b\u90e8\u4ef6\u5dee\u5f02\u800c\u6709\u6240\u589e\u51cf\u3002\n\u25a0 \u4ea7\u54c1\u90e8\u4ef6\u672c\u4f53\u4e0a\u5982\u6709\u73af\u4fdd\u4f7f\u7528\u671f\u9650\u6807\u8bc6\uff0c\u4ee5\u672c\u4f53\u6807\u8bc6\u4e3a\u4e3b\u3002\n\u9650\u7528\u7269\u8cea\u542b\u6709\u60c5\u6cc1\u6a19\u793a\u8072\u660e\u66f8\n\u8a2d\u5099\u540d\u7a31\uff1a\u96fb\u8166\u4e3b\u6a5f\u677f \u578b\u865f(\u578b\u5f0f)\uff1aMS-7E70\n\u9650\u7528\u7269\u8cea\u53ca\u5176\u5316\u5b78\u7b26\u865f\n\u55ae\u5143 \u925b \u6c5e \u9398 \u516d\u50f9\u927b \u591a\u6eb4\u806f\u82ef \u591a\u6eb4\u4e8c\u82ef\u919a\n(Pb) (Hg) (Cd) (Cr+6) (PBB) (PBDE)\n\u96fb\u8def\u677f \u25cb \u25cb \u25cb \u25cb \u25cb \u25cb\n\u96fb\u5b50\u5143\u4ef6 \u2500 \u25cb \u25cb \u25cb \u25cb \u25cb\n\u91d1\u5c6c\u6a5f\u69cb\u4ef6 \u2500 \u25cb \u25cb \u25cb \u25cb \u25cb\n\u5851\u81a0\u6a5f\u69cb\u4ef6 \u25cb \u25cb \u25cb \u25cb \u25cb \u25cb\n\u5099\u80031.\u201c \u8d85\u51fa0.1 wt %\u201d \u53ca\u201c \u8d85\u51fa0.01 wt %\u201d \u4fc2\u6307\u9650\u7528\u7269\u8cea\u4e4b\u767e\u5206\u6bd4\u542b\u91cf\u8d85\u51fa\u767e\u5206\u6bd4\u542b\u91cf\n\u57fa\u6e96\u503c\u3002\n\u5099\u80032.\u201c \u25cb\u201d \u4fc2\u6307\u8a72\u9805\u9650\u7528\u7269\u8cea\u4e4b\u767e\u5206\u6bd4\u542b\u91cf\u672a\u8d85\u51fa\u767e\u5206\u6bd4\u542b\u91cf\u57fa\u6e96\u503c\u3002\n\u5099\u80033.\u201c \u2500\u201d \u4fc2\u6307\u8a72\u9805\u9650\u7528\u7269\u8cea\u70ba\u6392\u9664\u9805\u76ee\u3002\nvi",
+      "tables": [
+        [
+          [
+            "\u90e8\u4ef6\u540d\u79f0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "\u94c5",
+            "\u6c5e",
+            "\u9549",
+            "\u6709\u5bb3\u7269\u8d28 \u516d\u4ef7\u94ec",
+            "\u591a\u6eb4\u8054\u82ef",
+            "\u591a\u6eb4\u4e8c\u82ef\u919a"
+          ],
+          [
+            "",
+            "(Pb)",
+            "(Hg)",
+            "(Cd)",
+            "(Cr(VI))",
+            "(PBB)",
+            "(PBDE)"
+          ],
+          [
+            "\u5370\u5237\u7535\u8def\u677f\u7ec4\u4ef6*",
+            "\u2573",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb"
+          ],
+          [
+            "\u7ebd\u6263\u7535\u6c60",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb"
+          ],
+          [
+            "\u5916\u90e8\u4fe1\u53f7\u8fde\u63a5\u5934",
+            "\u2573",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb"
+          ],
+          [
+            "\u5176\u4ed6 (\u4f8b: \u7ebf\u6750\u7b49) \u2573 \u25cb \u25cb \u25cb \u25cb \u25cb \u672c\u8868\u683c\u4f9d\u636e SJ/T 11364 \u7684\u89c4\u5b9a\u7f16\u5236\u3002 \u25cb: \u8868\u793a\u8be5\u6709\u5bb3\u7269\u8d28\u5728\u8be5\u90e8\u4ef6\u6240\u6709\u5747\u8d28\u6750\u6599\u4e2d\u7684\u542b\u91cf\u5747\u5728 GB/T 26572 \u89c4\u5b9a\u7684\u9650\u91cf\u8981\u6c42\u4ee5 \u4e0b\u3002 \u2573: \u8868\u793a\u8be5\u6709\u5bb3\u7269\u8d28\u81f3\u5c11\u5728\u8be5\u90e8\u4ef6\u7684\u67d0\u4e00\u5747\u8d28\u6750\u6599\u4e2d\u7684\u542b\u91cf\u8d85\u51fa GB/T 26572 \u89c4\u5b9a\u7684\u9650\u91cf \u8981\u6c42\uff0c\u4f46\u6240\u6709\u90e8\u4ef6\u90fd\u7b26\u5408\u6b27\u76dfRoHS\u8981\u6c42\u3002 * \u5370\u5237\u7535\u8def\u677f\u7ec4\u4ef6: \u5305\u62ec\u5370\u5237\u7535\u8def\u677f\u53ca\u5176\u6784\u6210\u7684\u96f6\u90e8\u4ef6\u3002 \u25a0 \u4e0a\u8ff0\u6709\u6bd2\u6709\u5bb3\u7269\u8d28\u6216\u5143\u7d20\u6e05\u5355\u4f1a\u4f9d\u578b\u53f7\u4e4b\u90e8\u4ef6\u5dee\u5f02\u800c\u6709\u6240\u589e\u51cf\u3002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "\u8a2d\u5099\u540d\u7a31\uff1a\u96fb\u8166\u4e3b \u55ae\u5143",
+            "\u6a5f\u677f \u578b\u865f(\u578b\u5f0f)\uff1aMS-7E70",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "\u925b",
+            "\u6c5e",
+            "",
+            "\u9650\u7528\u7269 \u9398",
+            "\u8cea\u53ca\u5176\u5316 \u516d\u50f9\u927b +6",
+            "\u5b78\u7b26\u865f \u591a\u6eb4\u806f\u82ef",
+            "\u591a\u6eb4\u4e8c\u82ef\u919a"
+          ],
+          [
+            "",
+            "(Pb)",
+            "(Hg)",
+            "",
+            "(Cd)",
+            "(Cr )",
+            "(PBB)",
+            "(PBDE)"
+          ],
+          [
+            "\u96fb\u8def\u677f",
+            "\u25cb",
+            "\u25cb",
+            "",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb"
+          ],
+          [
+            "\u96fb\u5b50\u5143\u4ef6",
+            "\u2500",
+            "\u25cb",
+            "",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb"
+          ],
+          [
+            "\u91d1\u5c6c\u6a5f\u69cb\u4ef6",
+            "\u2500",
+            "\u25cb",
+            "",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb",
+            "\u25cb"
+          ],
+          [
+            "\u5851\u81a0\u6a5f\u69cb\u4ef6 \u25cb \u25cb \u25cb \u25cb \u25cb \u25cb \u5099\u80031.\u201c \u8d85\u51fa0.1 wt %\u201d \u53ca\u201c \u8d85\u51fa0.01 wt %\u201d \u4fc2\u6307\u9650\u7528\u7269\u8cea\u4e4b\u767e\u5206\u6bd4\u542b\u91cf\u8d85\u51fa\u767e\u5206\u6bd4\u542b\u91cf \u57fa\u6e96\u503c\u3002 \u5099\u80032.\u201c \u25cb\u201d \u4fc2\u6307\u8a72\u9805\u9650\u7528\u7269\u8cea\u4e4b\u767e\u5206\u6bd4\u542b\u91cf\u672a\u8d85\u51fa\u767e\u5206\u6bd4\u542b\u91cf\u57fa\u6e96\u503c\u3002",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page": 70,
+      "text": "Copyright and Trademarks Notice\nCopyright \u00a9 Micro-Star Int\u2019l Co., Ltd. All rights reserved. The MSI logo used is a\nregistered trademark of Micro-Star Int\u2019l Co., Ltd. All other marks and names mentioned\nmay be trademarks of their respective owners. No warranty as to accuracy or\ncompleteness is expressed or implied. MSI reserves the right to make changes to this\ndocument without prior notice.\nThe terms HDMI\u2122, HDMI\u2122 High-Definition Multimedia Interface, HDMI\u2122 Trade dress\nand the HDMI\u2122 Logos are trademarks or registered trademarks of HDMI\u2122 Licensing\nAdministrator, Inc.\nTechnical Support\nIf a problem arises with your system and no solution can be obtained from the user\nguide, please contact your place of purchase or local distributor. Alternatively, please\ntry the following help resources for further guidance.\n\u25cf Visit the MSI website for technical guide, BIOS updates, driver updates, and other\ninformation: http://www.msi.com\n\u25cf Register your product at: http://register.msi.com\nRevision History\n\u25cf Version 1.0, 2025/05, First release.\nvii",
+      "tables": []
+    }
+  ]
+}
